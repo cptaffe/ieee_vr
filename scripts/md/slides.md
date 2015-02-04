@@ -21,7 +21,6 @@ subtitle: An Overview
 class: segue dark nobackground
 
 ---
-
 title: Qualcomm
 subtitle: The Parent Company
 
@@ -34,24 +33,50 @@ Sample Fields of study
 - Wearables
 
 ---
+title: Vuforia Applications
+subtitle: Text Recognition
 
-title: Vuforia
-subtitle: Example - 
+This example application was created by Qualcomm. A link to the official video
+can be found![here](https://www.youtube.com/watch?v=KLqFQ2u52iU)
 
-Some examples of valid & invalid grammars.
-
-<pre class="prettyprint" data-lang="lisp">
-	(+ 1 2) # valid
-	(add 1 2) # valid
-	(add) # valid
-	(+a 1 2) # invalid
-	(1 1 1) # invalid
-</pre>
-
-In lispy, a list with no operator is shorthand for a data list.
+<iframe width="420" height="315"
+	src="https://www.youtube.com/watch?v=KLqFQ2u52iU">
+</iframe>
 
 ---
+title: Vuforia Applications
+subtitle: Object Recognition
 
+This example application was created by Qualcomm. A link to the official video
+can be found![here](https://www.youtube.com/watch?v=mXpr37pR34U)
+
+<iframe width="420" height="315"
+	src="https://www.youtube.com/watch?v=mXpr37pR34U">
+</iframe>
+
+---
+title: Vuforia Applications
+subtitle: Smart Terrain
+
+This example application was created by Qualcomm. A link to the official video
+can be found![here](https://www.youtube.com/watch?v=UOfN1plW_Hw)
+
+<iframe width="420" height="315"
+	src="https://www.youtube.com/watch?v=UOfN1plW_Hw">
+</iframe>
+
+---
+title: Vuforia Applications
+subtitle: Cylindrical Targets
+
+This example application was created by Qualcomm. A link to the official video
+can be found![here](https://www.youtube.com/watch?v=LqgmlkJcqA4)
+
+<iframe width="420" height="315"
+	src="https://www.youtube.com/watch?v=LqgmlkJcqA4">
+</iframe>
+
+---
 <!-- How an interpreter works -->
 title: Interpreter
 subtitle: How it works
