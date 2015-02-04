@@ -1453,7 +1453,9 @@ aside.gdbar img {
 Schetchy video centering scss
 Added by Connor Taffe - Feb. 4th, 2015
 **/
-/* line 1054, ../scss/default.scss */
-.ytvideo {
-  margin: auto;
+/* line 1055, ../scss/default.scss */
+.ytvideo object {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
