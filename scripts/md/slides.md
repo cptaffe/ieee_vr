@@ -37,7 +37,7 @@ title: Vuforia Applications
 subtitle: Text Recognition
 
 This example application was created by Qualcomm. A link to the official video
-can be found![here](https://www.youtube.com/watch?v=KLqFQ2u52iU)
+can be found [here](https://www.youtube.com/watch?v=KLqFQ2u52iU)
 
 <iframe width="420" height="315"
 	src="https://www.youtube.com/watch?v=KLqFQ2u52iU">
@@ -48,7 +48,7 @@ title: Vuforia Applications
 subtitle: Object Recognition
 
 This example application was created by Qualcomm. A link to the official video
-can be found![here](https://www.youtube.com/watch?v=mXpr37pR34U)
+can be found [here](https://www.youtube.com/watch?v=mXpr37pR34U)
 
 <iframe width="420" height="315"
 	src="https://www.youtube.com/watch?v=mXpr37pR34U">
@@ -59,7 +59,7 @@ title: Vuforia Applications
 subtitle: Smart Terrain
 
 This example application was created by Qualcomm. A link to the official video
-can be found![here](https://www.youtube.com/watch?v=UOfN1plW_Hw)
+can be found [here](https://www.youtube.com/watch?v=UOfN1plW_Hw)
 
 <iframe width="420" height="315"
 	src="https://www.youtube.com/watch?v=UOfN1plW_Hw">
@@ -70,7 +70,7 @@ title: Vuforia Applications
 subtitle: Cylindrical Targets
 
 This example application was created by Qualcomm. A link to the official video
-can be found![here](https://www.youtube.com/watch?v=LqgmlkJcqA4)
+can be found [here](https://www.youtube.com/watch?v=LqgmlkJcqA4)
 
 <iframe width="420" height="315"
 	src="https://www.youtube.com/watch?v=LqgmlkJcqA4">
