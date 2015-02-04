@@ -72,9 +72,16 @@ subtitle: Cylindrical Targets
 This example application was created by Qualcomm. A link to the official video
 can be found [here](https://www.youtube.com/watch?v=LqgmlkJcqA4)
 
-<iframe width="420" height="315"
-	src="https://www.youtube.com/watch?v=LqgmlkJcqA4">
-</iframe>
+
+<object width="640" height="390">
+<param name="movie"
+		value="https://www.youtube.com/v/LqgmlkJcqA4&autoplay=1&autohide=1&rel=0"></param>
+<param name="allowScriptAccess" value="always"></param>
+<embed src="https://www.youtube.com/v/LqgmlkJcqA4?version=3&autoplay=1&autohide=1&rel=0"
+		type="application/x-shockwave-flash"
+		allowscriptaccess="always"
+		width="640" height="390"></embed>
+</object>
 
 ---
 <!-- How an interpreter works -->
