@@ -72,7 +72,7 @@ subtitle: Cylindrical Targets
 This example application was created by Qualcomm. A link to the official video
 can be found [here](https://www.youtube.com/watch?v=LqgmlkJcqA4)
 
-<object width="640" height="390">
+<object width="640" height="390" align="middle">
 <param name="movie"
 		value="https://www.youtube.com/v/LqgmlkJcqA4?version=3&autoplay=0&autohide=1&rel=0"></param>
 <param name="allowScriptAccess" value="always"></param>
