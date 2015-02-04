@@ -2,55 +2,41 @@
 title: Introduction
 build_lists: true
 
-This is an overview of an ongoing project I've been working on for around six months.
+Augmented Reality (AR) is the next generation for technology as it incorporates
+the real world with the virtual world. Vuforia is a high-level API that allows
+developers to easily design these applications for the general public with development time.
 
-- The Basilisk Langauge
-- Overview of how an interpreter works
-- Specifics of lispy
+This tutorial will cover the usage of Vuforia in standalone applications as
+well as paired with OpenCV to create an immersive experience.
+
+General Overview
+- Vuforia
+- Unity Applications
+- OpenCV Integration
 
 ---
-<!-- Basilisk Language-->
-title: The Basilisk Language
+<!-- Vuforia -->
+title: Vuforia
 subtitle: An Overview
 class: segue dark nobackground
 
 ---
 
-title: S-expressions 
-subtitle: much parens
+title: Qualcomm
+subtitle: The Parent Company
 
-S-expressions are also known as encapsulated polish notation.
+Qualcomm designed and currently maintains the Vuforia SDK. They have been in the Fortune 500 since 2003 and  still continue to be a leader in product innovation.
 
-This follows the pattern operator, oparands.
-
-<pre class="prettyprint" data-lang="lisp">
-	(+ 1 2)
-	(add 1 2)
-</pre>
-
-I chose s-expressions because they are simple to parse into a tree.
+Sample Fields of study
+- Automotive
+- Healthcare
+- Networking
+- Wearables
 
 ---
 
-title: Grammar 
-subtitle: language specification
-
-Basilisk's language spec is a bit more specific.
-
-<pre class="prettyprint" data-lang="ebnf">
-	operator = identifier | (symbol {symbol});
-	argument = identifier | number | char | string;
-	s-expression = "(" [whitespace] operator {whitespace argument} [whitespace] ")";
-</pre>
-
-+ identifier (or id) is a variable
-+ symbols are +, -, etc.
-+ numbers, chars, and strings are their respective literals.
-
----
-
-title: Grammar 
-subtitle: language specification
+title: Vuforia
+subtitle: Example - 
 
 Some examples of valid & invalid grammars.
 
@@ -73,7 +59,7 @@ class: segue dark nobackground
 
 ---
 
-title: How an interpreter works 
+title: How an interpreter works
 subtitle: workflow
 
 An interpreter usually consists of several stages:
@@ -84,7 +70,7 @@ An interpreter usually consists of several stages:
 
 ---
 
-title: How an interpreter works 
+title: How an interpreter works
 subtitle: Lexical Analysis
 
 A lexer reads an input (usually a file) and produces tokens.
@@ -109,7 +95,7 @@ stream of characters -> lexer -> tokens
 
 ---
 
-title: How an interpreter works 
+title: How an interpreter works
 subtitle: Syntactical Analysis
 
 A parser reads tokens and builds an abstract syntax tree (AST).
@@ -120,7 +106,7 @@ An ast usually looks like this:
 
 ---
 
-title: How an interpreter works 
+title: How an interpreter works
 subtitle: Interpretation
 
 In the interpretation part you take the tree and evaluate it.
@@ -185,9 +171,9 @@ subtitle: recursion
 Within the scope of a lambda, a variable called self is set with the value of itself. In this way, one can recurse.
 
 <pre class="prettyprint" data-lang="lisp">
-	(def ! 
-		(lambda (n) 
-			(if n 
+	(def !
+		(lambda (n)
+			(if n
 				1 (* n (self (- n 1)))))) # => !
 	(! 40) # => 815915283247897734345611269596115894272000000000
 </pre>

@@ -56,7 +56,7 @@ URL: https://code.google.com/p/io-2012-slides
 
 
 <slide  >
-  
+
     <hgroup>
       <h2>Introduction</h2>
       <h3></h3>
@@ -67,21 +67,21 @@ URL: https://code.google.com/p/io-2012-slides
 <li>Overview of how an interpreter works</li>
 <li>Specifics of lispy</li>
 </ul></article>
- 
+
 </slide>
 
 <slide class="segue dark nobackground" >
-  
+
     <aside class="gdbar"><img src="images/lispy_icon_128.png"></aside>
     <hgroup class="auto-fadein">
       <h2>The Basilisk Language</h2>
       <h3>An Overview</h3>
     </hgroup>
-  
+
 </slide>
 
 <slide  >
-  
+
     <hgroup>
       <h2>S-expressions</h2>
       <h3>much parens</h3>
@@ -94,11 +94,11 @@ URL: https://code.google.com/p/io-2012-slides
 </pre>
 
 <p>I chose s-expressions because they are simple to parse into a tree.</p></article>
- 
+
 </slide>
 
 <slide  >
-  
+
     <hgroup>
       <h2>Grammar</h2>
       <h3>language specification</h3>
@@ -115,11 +115,11 @@ URL: https://code.google.com/p/io-2012-slides
 <li>symbols are +, -, etc.</li>
 <li>numbers, chars, and strings are their respective literals.</li>
 </ul></article>
- 
+
 </slide>
 
 <slide  >
-  
+
     <hgroup>
       <h2>Grammar</h2>
       <h3>language specification</h3>
@@ -134,21 +134,21 @@ URL: https://code.google.com/p/io-2012-slides
 </pre>
 
 <p>In lispy, a list with no operator is shorthand for a data list.</p></article>
- 
+
 </slide>
 
 <slide class="segue dark nobackground" >
-  
+
     <aside class="gdbar"><img src="images/lispy_icon_128.png"></aside>
     <hgroup class="auto-fadein">
       <h2>Interpreter</h2>
       <h3>How it works</h3>
     </hgroup>
-  
+
 </slide>
 
 <slide  >
-  
+
     <hgroup>
       <h2>How an interpreter works</h2>
       <h3>workflow</h3>
@@ -159,11 +159,11 @@ URL: https://code.google.com/p/io-2012-slides
 <li>Syntactic Analysis (parser)</li>
 <li>Interpretation</li>
 </ul></article>
- 
+
 </slide>
 
 <slide  >
-  
+
     <hgroup>
       <h2>How an interpreter works</h2>
       <h3>Lexical Analysis</h3>
@@ -184,11 +184,11 @@ URL: https://code.google.com/p/io-2012-slides
         {typ: ep, str: ")"}
     ]
 </pre></article>
- 
+
 </slide>
 
 <slide  >
-  
+
     <hgroup>
       <h2>How an interpreter works</h2>
       <h3>Syntactical Analysis</h3>
@@ -196,11 +196,11 @@ URL: https://code.google.com/p/io-2012-slides
     <article ><p>A parser reads tokens and builds an abstract syntax tree (AST).</p>
 <p>An ast usually looks like this:</p>
 <p><img alt="Abstract Syntax Tree" src="http://www.redhat.com/magazine/002dec04/features/gcc/figs/ast.png" /></p></article>
- 
+
 </slide>
 
 <slide  >
-  
+
     <hgroup>
       <h2>How an interpreter works</h2>
       <h3>Interpretation</h3>
@@ -212,21 +212,21 @@ URL: https://code.google.com/p/io-2012-slides
     (+ 1 b) # => 2:5: undefined 'b'
     (+ 1 (- 4 3)) # => 2
 </pre></article>
- 
+
 </slide>
 
 <slide class="segue dark nobackground" >
-  
+
     <aside class="gdbar"><img src="images/lispy_icon_128.png"></aside>
     <hgroup class="auto-fadein">
       <h2>lispy</h2>
       <h3>it's pretty awesome</h3>
     </hgroup>
-  
+
 </slide>
 
 <slide  >
-  
+
     <hgroup>
       <h2>Lazy Evaluation</h2>
       <h3>storing work for later</h3>
@@ -241,11 +241,11 @@ URL: https://code.google.com/p/io-2012-slides
 </pre>
 
 <p>When a is assigned, it is stored as (+1 b), which is evaluated on lines 2 and 4.</p></article>
- 
+
 </slide>
 
 <slide  >
-  
+
     <hgroup>
       <h2>Lambdas</h2>
       <h3>scoped execution</h3>
@@ -261,28 +261,28 @@ URL: https://code.google.com/p/io-2012-slides
     (func) # => a
     (a) # => 4
 </pre></article>
- 
+
 </slide>
 
 <slide  >
-  
+
     <hgroup>
       <h2>Lambdas</h2>
       <h3>recursion</h3>
     </hgroup>
     <article ><p>Within the scope of a lambda, a variable called self is set with the value of itself. In this way, one can recurse.</p>
 <pre class="prettyprint" data-lang="lisp">
-    (def ! 
-        (lambda (n) 
-            (if n 
+    (def !
+        (lambda (n)
+            (if n
                 1 (* n (self (- n 1)))))) # => !
     (! 40) # => 815915283247897734345611269596115894272000000000
 </pre></article>
- 
+
 </slide>
 
 <slide  >
-  
+
     <hgroup>
       <h2>Statement based execution</h2>
       <h3>overview</h3>
@@ -299,11 +299,11 @@ URL: https://code.google.com/p/io-2012-slides
     (noeval (+ 1 2))
     (+ 1 2) # tree is returned, pretty printed
 </pre></article>
- 
+
 </slide>
 
 <slide  >
-  
+
     <hgroup>
       <h2>REPL utility</h2>
       <h3>usage</h3>
@@ -318,7 +318,7 @@ URL: https://code.google.com/p/io-2012-slides
          allowscriptaccess="always"
          width="640" height="390"></embed>
 </object></p></article>
- 
+
 </slide>
 
 
