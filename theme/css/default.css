@@ -1449,3 +1449,11 @@ aside.gdbar img {
     font-family: monospace !important;
   }
 }
+/**
+Schetchy video centering scss
+Added by Connor Taffe - Feb. 4th, 2015
+**/
+/* line 1054, ../scss/default.scss */
+.ytvideo {
+  margin: auto;
+}

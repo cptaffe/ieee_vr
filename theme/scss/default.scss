@@ -939,7 +939,7 @@ aside.gdbar {
       display: none !important;
     }
   }
-  
+
   slides {
     slide {
       &.backdrop {
@@ -1044,4 +1044,13 @@ aside.gdbar {
   pre, code {
     font-family: monospace !important;
   }
+}
+
+/**
+Schetchy video centering scss
+Added by Connor Taffe - Feb. 4th, 2015
+**/
+
+.ytvideo {
+    margin: auto;
 }
