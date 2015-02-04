@@ -82,6 +82,6 @@ can be found [here](https://www.youtube.com/watch?v=LqgmlkJcqA4)
 
 ---
 <!-- How an interpreter works -->
-title: Interpreter
-subtitle: How it works
+title: Vuforia & Unity
+subtitle: Integration
 class: segue dark nobackground
