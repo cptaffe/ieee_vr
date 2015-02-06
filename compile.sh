@@ -7,7 +7,7 @@ set -o pipefail
 #set -o xtrace
 
 # globals
-log_file="log.log"
+log_file="${HOME}/log.log"
 work_dir="${HOME}/eac_dev/ieee_vr_vuforia"
 
 log_init() {
