@@ -19,7 +19,7 @@ log_init() {
   fi
 
   date=date
-  printf "Log: %s\nDate: %s\nFile: %s\n\n" "log for 'compile.sh'" "${1}" "${date}"
+  printf "Log: %s\nDate: %s\nFile: %s\n\n" "log for 'compile.sh'" "${1}" "${date}" &>>"${log_file}"
 
 }
 
