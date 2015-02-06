@@ -37,6 +37,29 @@ Sample Fields of study
 - Wearables
 
 ---
+title: Qualcomm Products
+subtitle: Snapdragon Mobile Processors
+
+The Snapdragon processor is state of the art for mobile phones
+
+Featured in the new Moto X and the Samsung Galaxy Note 4
+
+---
+title: Qualcomm Products
+subtitle: HomePlug
+
+A link to the official video can be found
+[here](https://www.youtube.com/watch?v=cx-X0UsWCG8)
+
+<div class="ytvideo">
+	<object width="640" height="390" class="ytvideo">
+		<param name="movie" value="https://www.youtube.com/v/cx-X0UsWCG8?version=3&autoplay=0&autohide=1&rel=0"></param>
+		<param name="allowScriptAccess" value="always"></param>
+		<embed src="https://www.youtube.com/v/cx-X0UsWCG8?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
+	</object>
+</div>
+
+---
 <!-- Vuforia -->
 title: Vuforia - Features
 subtitle: Application Overview
