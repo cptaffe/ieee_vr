@@ -44,15 +44,15 @@ run_cmd() {
 run_cmd "git -C ${work_dir} pull"
 
 # make pulled content
-run_cmd "make"
+run_cmd "make -C ${work_dir}"
 
 # add changes
-run_cmd "git add --update"
+run_cmd "git -C ${work_dir} add --update"
 
 # commit with commit_msg
 # TODO: fix quotes so they evaluate properly for full message phrasing
-cmd="git commit --message recompile"
+cmd="git -C ${work_dir} commit --message recompile"
 run_cmd "${cmd}"
 
 # push changes to server
-run_cmd "git push"
+run_cmd "git -C ${work_dir} push"
