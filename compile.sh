@@ -87,7 +87,7 @@ run_cmd "git ${git_flags} add --update"
 # TODO: fix quotes so they evaluate properly for full message phrasing
 tmpfile=`mktemp`
 printf "automatic compile" >"${tmpfile}"
-run_cmd "git ${git_flags} commit --file ${tmpfile}"
+git ${git_flags} commit --file ${tmpfile}
 rm -f "${tmpfile}"
 
 # push changes to server
