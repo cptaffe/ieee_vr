@@ -15,8 +15,8 @@ General Overview
 - OpenCV Integration
 
 ---
-<!-- Vuforia -->
-title: Vuforia
+<!-- Qualcomm -->
+title: Qualcomm
 subtitle: An Overview
 class: segue dark nobackground
 
@@ -31,6 +31,12 @@ Sample Fields of study
 - Healthcare
 - Networking
 - Wearables
+
+---
+<!-- Vuforia -->
+title: Vuforia - Features
+subtitle: Application Overview
+class: segue dark nobackground
 
 ---
 title: Vuforia Applications
@@ -93,7 +99,13 @@ can be found [here](https://www.youtube.com/watch?v=LqgmlkJcqA4)
 </div>
 
 ---
-<!-- How an interpreter works -->
-title: Vuforia & Unity
-subtitle: Integration
+<!-- Vuforia Getting Started -->
+title: Vuforia - Setting Up
+subtitle: Getting Started
 class: segue dark nobackground
+
+---
+title: Vuforia Account
+subtitle: Creating a Developer Account
+
+Registering for a developer account is easy and can be found [here]{https://developer.vuforia.com/user/register}
