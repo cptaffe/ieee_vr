@@ -41,9 +41,9 @@ can be found [here](https://www.youtube.com/watch?v=KLqFQ2u52iU)
 
 <div class="ytvideo">
 	<object width="640" height="390" class="ytvideo">
-	<param name="movie" value="https://www.youtube.com/v/KLqFQ2u52iU?version=3&autoplay=0&autohide=1&rel=0"></param>
-	<param name="allowScriptAccess" value="always"></param>
-	<embed src="https://www.youtube.com/v/KLqFQ2u52iU?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
+		<param name="movie" value="https://www.youtube.com/v/KLqFQ2u52iU?version=3&autoplay=0&autohide=1&rel=0"></param>
+		<param name="allowScriptAccess" value="always"></param>
+		<embed src="https://www.youtube.com/v/KLqFQ2u52iU?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
 	</object>
 </div>
 
@@ -56,9 +56,9 @@ can be found [here](https://www.youtube.com/watch?v=mXpr37pR34U)
 
 <div class="ytvideo">
 	<object width="640" height="390" class="ytvideo">
-	<param name="movie" value="https://www.youtube.com/v/mXpr37pR34U?version=3&autoplay=0&autohide=1&rel=0"></param>
-	<param name="allowScriptAccess" value="always"></param>
-	<embed src="https://www.youtube.com/v/mXpr37pR34U?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
+		<param name="movie" value="https://www.youtube.com/v/mXpr37pR34U?version=3&autoplay=0&autohide=1&rel=0"></param>
+		<param name="allowScriptAccess" value="always"></param>
+		<embed src="https://www.youtube.com/v/mXpr37pR34U?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
 	</object>
 </div>
 
@@ -71,9 +71,9 @@ can be found [here](https://www.youtube.com/watch?v=UOfN1plW_Hw)
 
 <div class="ytvideo">
 	<object width="640" height="390" class="ytvideo">
-	<param name="movie" value="https://www.youtube.com/v/UOfN1plW_Hw?version=3&autoplay=0&autohide=1&rel=0"></param>
-	<param name="allowScriptAccess" value="always"></param>
-	<embed src="https://www.youtube.com/v/UOfN1plW_Hw?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
+		<param name="movie" value="https://www.youtube.com/v/UOfN1plW_Hw?version=3&autoplay=0&autohide=1&rel=0"></param>
+		<param name="allowScriptAccess" value="always"></param>
+		<embed src="https://www.youtube.com/v/UOfN1plW_Hw?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
 	</object>
 </div>
 
@@ -86,9 +86,9 @@ can be found [here](https://www.youtube.com/watch?v=LqgmlkJcqA4)
 
 <div class="ytvideo">
 	<object width="640" height="390" class="ytvideo">
-	<param name="movie" value="https://www.youtube.com/v/LqgmlkJcqA4?version=3&autoplay=0&autohide=1&rel=0"></param>
-	<param name="allowScriptAccess" value="always"></param>
-	<embed src="https://www.youtube.com/v/LqgmlkJcqA4?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
+		<param name="movie" value="https://www.youtube.com/v/LqgmlkJcqA4?version=3&autoplay=0&autohide=1&rel=0"></param>
+		<param name="allowScriptAccess" value="always"></param>
+		<embed src="https://www.youtube.com/v/LqgmlkJcqA4?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
 	</object>
 </div>
 
