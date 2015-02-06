@@ -8,6 +8,7 @@ set -o pipefail
 
 # globals
 log_file="log.log"
+work_dir="${HOME}/eac_dev/ieee_vr_vuforia"
 
 exit_on_fail() {
 
@@ -40,7 +41,7 @@ run_cmd() {
 }
 
 # pull and update
-run_cmd "git pull"
+run_cmd "git -C ${work_dir} pull"
 
 # make pulled content
 run_cmd "make"
