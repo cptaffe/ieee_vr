@@ -19,9 +19,12 @@ log_init() {
   fi
 
   date=`date`
-  echo -n "" &>"${log_file}" # clear log file
+  # echo -n "" &>"${log_file}" # clear log file
   printf "Log: %s\nDate: %s\nFile: %s\n\n" "log for 'compile.sh'" "${date}" "${1}" &>>"${log_file}"
+}
 
+log_finish() {
+  printf "===\n\n"
 }
 
 exit_on_fail() {
@@ -73,3 +76,5 @@ run_cmd "${cmd}"
 
 # push changes to server
 run_cmd "git -C ${work_dir} push"
+
+log_finish
