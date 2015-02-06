@@ -6,8 +6,14 @@ set -o nounset
 set -o pipefail
 #set -o xtrace
 
+# check args
+if test "${#}" -ne 1; then
+  echo "incorrect usage of ${0}, exiting."
+  exit 1
+fi
+
 # globals
-this_home="/home/cpt"
+this_home="${1}"
 log_file="${this_home}/log.log"
 work_dir="${this_home}/eac_dev/ieee_vr_vuforia"
 git_flags="-C ${work_dir}"
@@ -79,8 +85,10 @@ run_cmd "git ${git_flags} add --update"
 
 # commit with commit_msg
 # TODO: fix quotes so they evaluate properly for full message phrasing
-cmd="git ${git_flags} commit --message recompile"
-run_cmd "${cmd}"
+tmpfile=`mktemp`
+printf "automatic compile" >"${tmpfile}"
+run_cmd "git ${git_flags} commit --file ${tmpfile}"
+rm -f "${tmpfile}"
 
 # push changes to server
 run_cmd "git ${git_flags} push"
