@@ -1,6 +1,7 @@
 
 # Python with markdown installed with pip
-PYTHON?=/usr/local/Cellar/python/2.7.9/bin/python
+#PYTHON?=/usr/local/Cellar/python/2.7.9/bin/python
+PYTHON=python
 RENDER_SCRIPT=scripts/md/render.py
 
 # to install compass do:
@@ -28,3 +29,4 @@ depends:
 	sudo gem install compass
 	# python stuffs
 	pip install markdown
+	pip install jinja2
