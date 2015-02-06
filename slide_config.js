@@ -22,18 +22,18 @@ var SLIDE_CONFIG = {
 
   // Author information
   presenters: [{
-    name: 'Connor Taffe',
-    company: 'Univ. of Ark. at LR, US',
-    // gplus: 'http://plus.google.com/109621489651016521466/',
-    // twitter: '@cptaffe',
-    www: 'http://ualr.edu',
-    //github: 'http://github.com/cptaffe'
-}, {
     name: 'Alex Jaeger',
-    company: 'Univ. of Ark. at LR, US.',
-    // gplus: 'http://plus.google.com/1234567890',
-    // twitter: '@yourhandle',
+    company: 'University Of Arkansas At Little Rock',
     www: 'http://ualr.edu',
-    // github: 'http://github.com/you'
+    gplus: 'http://plus.google.com/109621489651016521466/',
+    // twitter: '@cptaffe',
+    github: 'http://github.com/Alex-Jaeger'
+}, {
+    name: 'Connor Taffe',
+    company: 'University Of Arkansas At Little Rock',
+    www: 'http://ualr.edu',
+    gplus: 'http://plus.google.com/1234567890',
+    //twitter: '@yourhandle',
+    github: 'http://github.com/cptaffe'
 }]
 };
