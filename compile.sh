@@ -21,7 +21,7 @@ log_init() {
   echo "# Log for '${1}': " >"${1}"
   echo -n "Date: " >"${1}"
   date >>"${1}" >"${1}"
-  echo "File: ${1}" >"${1}"
+  echo "File: ${1}" >>"${1}"
   echo "" >>"${1}"
 }
 
