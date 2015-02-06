@@ -18,9 +18,9 @@ log_init() {
     exit 1
   fi
 
-  date=date
+  date=`date`
   echo -n "" &>"${log_file}" # clear log file
-  printf "Log: %s\nDate: %s\nFile: %s\n\n" "log for 'compile.sh'" "${1}" "${date}" &>>"${log_file}"
+  printf "Log: %s\nDate: %s\nFile: %s\n\n" "log for 'compile.sh'" "${date}" "${1}" &>>"${log_file}"
 
 }
 
