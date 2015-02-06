@@ -24,7 +24,7 @@ log_init() {
 }
 
 log_finish() {
-  printf "===\n\n"
+  printf "===\n\n" &>>"${log_file}"
 }
 
 exit_on_fail() {
