@@ -18,11 +18,9 @@ log_init() {
     exit 1
   fi
 
-  echo "# Log for '${1}': " >"${1}"
-  echo -n "Date: " >>"${1}"
-  date >>"${1}" >>"${1}"
-  echo "File: ${1}" >>"${1}"
-  echo "" >>"${1}"
+  date=date
+  printf "Log: %s\nDate: %s\nFile: %s\n\n" "log for 'compile.sh'" "${1}" "${date}"
+
 }
 
 exit_on_fail() {
