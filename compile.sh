@@ -7,8 +7,14 @@ set -o pipefail
 #set -o xtrace
 
 # globals
-log_file="${HOME}/log.log"
-work_dir="${HOME}/eac_dev/ieee_vr_vuforia"
+this_home="/home/cpt"
+log_file="${this_home}/log.log"
+work_dir="${this_home}/eac_dev/ieee_vr_vuforia"
+git_flags="-C ${work_dir}"
+make_flags="-C ${work_dir}"
+
+# set git evironmental variable
+GIT_SSH="ssh -i ${this_home}/id_rsa"
 
 log_init() {
 
@@ -32,12 +38,14 @@ exit_on_fail() {
   # check args
   if test "${#}" -ne 2; then
     echo "incorrect usage of exit_on_fail, exiting."
+    log_finish
     exit 1
   fi
 
   # exit on failure
   if test "${1}" -ne 0; then
     echo "${2} failed, exiting."
+    log_finish
     exit 1
   fi
 }
@@ -61,20 +69,20 @@ run_cmd() {
 log_init "${log_file}"
 
 # pull and update
-run_cmd "git -C ${work_dir} pull"
+run_cmd "git ${git_flags} pull"
 
 # make pulled content
-run_cmd "make -C ${work_dir}"
+run_cmd "make ${make_flags}"
 
 # add changes
-run_cmd "git -C ${work_dir} add --update"
+run_cmd "git ${git_flags} add --update"
 
 # commit with commit_msg
 # TODO: fix quotes so they evaluate properly for full message phrasing
-cmd="git -C ${work_dir} commit --message recompile"
+cmd="git ${git_flags} commit --message recompile"
 run_cmd "${cmd}"
 
 # push changes to server
-run_cmd "git -C ${work_dir} push"
+run_cmd "git ${git_flags} push"
 
 log_finish
