@@ -18,10 +18,10 @@ log_init() {
     exit 1
   fi
 
-  echo "# Log for 'compile.sh': " >"${1}"
-  echo -n "Date: "
-  date >>"${1}"
-  echo "File: ${1}"
+  echo "# Log for '${1}': " >"${1}"
+  echo -n "Date: " >"${1}"
+  date >>"${1}" >"${1}"
+  echo "File: ${1}" >"${1}"
   echo "" >>"${1}"
 }
 
