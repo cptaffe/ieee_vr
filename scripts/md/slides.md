@@ -108,4 +108,27 @@ class: segue dark nobackground
 title: Vuforia Account
 subtitle: Creating a Developer Account
 
-Registering for a developer account is easy and can be found [here]{https://developer.vuforia.com/user/register}
+Registering for a developer account is easy and can be found [here](https://developer.vuforia.com/user/register)
+
+Enter your information and sign up for a free developer account.
+
+---
+title: Unity Extension
+subtitle: Resource Page Navigation
+
+The navigation bar on the top of the page has links to various sites available to
+developers.
+
+Go ahead and click the Resource tab
+
+The bar on the left contains extensions for Android, iOS, and Unity. For this tutorial,
+download the current extension for Unity.
+
+---
+title: Importing to Unity
+subtitle: Click the Extension
+
+With Unity open, run the extension from the download location, and import all the files.
+
+This extension will import the Vuforia SDK into the root directory of the project
+---
