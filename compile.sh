@@ -18,8 +18,9 @@ log_init() {
     exit 1
   fi
 
-  echo -n "log for compile.sh on data on " &>"${1}"
-  date &>>"${1}"
+  echo -n "# log for compile.sh on data on " >"${1}"
+  date >>"${1}"
+  echo "=================================================" >>"${1}"
 }
 
 exit_on_fail() {
