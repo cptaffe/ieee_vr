@@ -10,6 +10,19 @@ set -o pipefail
 log_file="log.log"
 work_dir="${HOME}/eac_dev/ieee_vr_vuforia"
 
+log_init() {
+
+  # check args
+  if test "${#}" -ne 1; then
+    echo "incorrect usage of clear_log, exiting."
+    exit 1
+  fi
+
+  echo -n "log for compile.sh on data" &>"${1}"
+  date &>>"${1}"
+  echo "" &>>"${1}"
+}
+
 exit_on_fail() {
 
   # check args
@@ -39,6 +52,9 @@ run_cmd() {
   ${cmd} &>>"${log_file}"
   exit_on_fail "${?}" "${cmd}"
 }
+
+# init log file
+log_init "${log_file}"
 
 # pull and update
 run_cmd "git -C ${work_dir} pull"
