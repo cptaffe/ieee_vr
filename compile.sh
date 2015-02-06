@@ -49,6 +49,7 @@ run_cmd "make"
 run_cmd "git add --update"
 
 # commit with commit_msg
+# TODO: fix quotes so they evaluate properly for full message phrasing
 cmd="git commit --message recompile"
 run_cmd "${cmd}"
 
