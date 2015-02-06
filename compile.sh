@@ -6,14 +6,21 @@ set -o nounset
 set -o pipefail
 #set -o xtrace
 
+this_home=""
+
 # check args
 if test "${#}" -ne 1; then
-  echo "incorrect usage of ${0}, exiting."
-  exit 1
+  if test "${#}" -eq 0; then
+    this_home="${HOME}"
+  else
+    echo "incorrect usage of ${0}, exiting."
+    exit 1
+  fi
+else
+  this_home="${1}"
 fi
 
 # globals
-this_home="${1}"
 log_file="${this_home}/log.log"
 work_dir="${this_home}/eac_dev/ieee_vr_vuforia"
 git_flags="-C ${work_dir}"
