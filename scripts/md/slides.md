@@ -39,9 +39,13 @@ subtitle: Text Recognition
 This example application was created by Qualcomm. A link to the official video
 can be found [here](https://www.youtube.com/watch?v=KLqFQ2u52iU)
 
-<iframe width="420" height="315"
-	src="https://www.youtube.com/watch?v=KLqFQ2u52iU">
-</iframe>
+<div class="ytvideo">
+	<object width="640" height="390" class="ytvideo">
+	<param name="movie" value="https://www.youtube.com/v/KLqFQ2u52iU?version=3&autoplay=0&autohide=1&rel=0"></param>
+	<param name="allowScriptAccess" value="always"></param>
+	<embed src="https://www.youtube.com/v/KLqFQ2u52iU?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
+	</object>
+</div>
 
 ---
 title: Vuforia Applications
@@ -50,9 +54,13 @@ subtitle: Object Recognition
 This example application was created by Qualcomm. A link to the official video
 can be found [here](https://www.youtube.com/watch?v=mXpr37pR34U)
 
-<iframe width="420" height="315"
-	src="https://www.youtube.com/watch?v=mXpr37pR34U">
-</iframe>
+<div class="ytvideo">
+	<object width="640" height="390" class="ytvideo">
+	<param name="movie" value="https://www.youtube.com/v/mXpr37pR34U?version=3&autoplay=0&autohide=1&rel=0"></param>
+	<param name="allowScriptAccess" value="always"></param>
+	<embed src="https://www.youtube.com/v/mXpr37pR34U?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
+	</object>
+</div>
 
 ---
 title: Vuforia Applications
@@ -61,9 +69,13 @@ subtitle: Smart Terrain
 This example application was created by Qualcomm. A link to the official video
 can be found [here](https://www.youtube.com/watch?v=UOfN1plW_Hw)
 
-<iframe width="420" height="315"
-	src="https://www.youtube.com/watch?v=UOfN1plW_Hw">
-</iframe>
+<div class="ytvideo">
+	<object width="640" height="390" class="ytvideo">
+	<param name="movie" value="https://www.youtube.com/v/UOfN1plW_Hw?version=3&autoplay=0&autohide=1&rel=0"></param>
+	<param name="allowScriptAccess" value="always"></param>
+	<embed src="https://www.youtube.com/v/UOfN1plW_Hw?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
+	</object>
+</div>
 
 ---
 title: Vuforia Applications
