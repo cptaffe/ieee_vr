@@ -9,6 +9,10 @@ developers to easily design these applications for the general public with devel
 This tutorial will cover the usage of Vuforia in standalone applications as
 well as paired with OpenCV to create an immersive experience.
 
+We encourage you to view the presentation from your laptops as reference during
+the example projects. The presentation is being hosted online at
+http://byteflame.org/ieee_vr_vuforia/
+
 General Overview
 - Vuforia
 - Unity Applications
@@ -130,5 +134,26 @@ subtitle: Click the Extension
 
 With Unity open, run the extension from the download location, and import all the files.
 
-This extension will import the Vuforia SDK into the root directory of the project
+This extension will import the Vuforia SDK into the root directory of the project.
+
 ---
+title: Getting to know Vuforia
+subtitle: The Insides
+class: segue dark nobackground
+
+---
+title: Getting to know Vuforia
+subtitle: File System
+
+Editor and Plugins folders
+	Contains the code
+
+Qualcomm Augmented Reality
+	Contains important resources
+
+StreamingAssets
+	Contains the target databases from the developer portal
+
+---
+title: Getting to know Vuforia
+subtitle: Asset Analysis
