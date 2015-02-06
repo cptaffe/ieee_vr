@@ -112,7 +112,8 @@ class: segue dark nobackground
 title: Vuforia Account
 subtitle: Creating a Developer Account
 
-Registering for a developer account is easy and can be found [here](https://developer.vuforia.com/user/register)
+Registering for a developer account is easy and can be found
+__[here](https://developer.vuforia.com/user/register)__
 
 Enter your information and sign up for a free developer account.
 
