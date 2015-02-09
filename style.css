@@ -44,19 +44,30 @@ a, a:visited {
 a:hover {
   color: #5aa0d2; }
 
-#buttons {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  margin-bottom: 10px; }
-  #buttons div {
-    padding: 2px;
-    margin: 5px;
-    color: #4183C4;
-    display: inline;
-    cursor: pointer; }
-  #buttons #num {
-    color: rgba(200, 200, 200, 0.5); }
+.logo {
+/*    background-color: blue; */
+    display: block;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    margin-bottom: 15px;
+    fill: blue;
+}
+
+.logo > img {
+    display: block;
+    margin: auto;
+    width: 128px;
+    margin-bottom: 40px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    color: rgba(200, 200, 200, 0.7);
+}
+
+.footer > a {
+    color: #8ED0FF;
+}
