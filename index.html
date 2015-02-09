@@ -1,336 +1,168 @@
-<!--
-Google IO 2012 HTML5 Slide Template
-
-Authors: Eric Bidelman <ebidel@gmail.com>
-         Luke Mahe <lukem@google.com>
-
-URL: https://code.google.com/p/io-2012-slides
--->
-<!DOCTYPE html>
 <html>
-<head>
-  <title>lispy</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-  <!--This one seems to work all the time, but really small on ipad-->
-  <!--<meta name="viewport" content="initial-scale=0.4">-->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="stylesheet" media="all" href="theme/css/default.css">
-  <link rel="stylesheet" media="all" href="theme/css/app.css">
-  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
-  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
-</head>
-<body style="opacity: 0">
+	<head>
+		<link type="text/css" href="style.css" rel="stylesheet"/>
+		<meta name="google-site-verification" content="a3A-3926CLdwHsXz0T40Z108f9qHOinDYnUdMml_6D4" />
+	</head>
+	<body>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-<!-- Google Analytics -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		<!-- Google Analytics -->
 
-  ga('create', 'UA-50530549-1', 'auto');
-  ga('send', 'pageview');
-</script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<slides class="layout-widescreen">
+		  ga('create', 'UA-50530549-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
 
-<slide class="logoslide nobackground">
-  <article class="flexbox vcenter">
-    <span><img src="images/ualr_logo.png"></span>
-  </article>
-</slide>
+		<!-- Lame JavaScript -->
 
-<slide class="title-slide segue nobackground">
-  <aside class="gdbar"><img src="images/ualr_logo_128.png"></aside>
-  <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
-  <hgroup class="auto-fadein">
-    <h1 data-config-title><!-- populated from slide_config.json --></h1>
-    <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
-    <p data-config-presenter><!-- populated from slide_config.json --></p>
-  </hgroup>
-</slide>
+		<script>
+		// konami
+		var konami = 0;
+		function konami_code(e) {
+			if (konami < 2) {
+				if(e.which == 38){konami++;} // up, up
+				else {konami = 0;}
+			} else if (konami >= 2 && konami < 4) {
+				if(e.which == 40){konami++;} // down, down
+				else {konami = 0;}
+			} else if (konami == 4 || konami == 6) {
+				if(e.which == 37){konami++;} // left
+				else {konami = 0;}
+			} else if (konami == 5 || konami == 7) {
+				if(e.which == 39){konami++;} // right
+				else {konami = 0;}
+			} else if (konami == 8) {
+				if(e.which == 66){konami++;} // B
+				else {konami = 0;}
+			} else if (konami == 9) {
+				if(e.which == 65){konami++;} // A
+				else {konami = 0;}
+			} else if (konami == 10) {
+				if (e.which == 13) {
+					loadPage("Konami");
+					$("#num").html("konami(↑↑↓↓←→←→ba↩)");
+					konami = 0;
+				}
+			}
+		}
 
+		var sites = ["Ramblings", "Projects"];
+		var index = 1; //Math.round(Math.random() * (sites.length - 1));
 
-<slide  >
-  
-    <hgroup>
-      <h2>Introduction</h2>
-      <h3></h3>
-    </hgroup>
-    <article ><p>Augmented Reality (AR) is the next generation for technology as it incorporates
-the real world with the virtual world. Vuforia is a high-level API that allows
-developers to easily design these applications for the general public with development time.</p>
-<p>This tutorial will cover the usage of Vuforia in standalone applications as
-well as paired with OpenCV to create an immersive experience.</p>
-<p>We encourage you to view the presentation from your laptops as reference during
-the example projects. The presentation is being hosted online at
-http://byteflame.org/ieee_vr_vuforia/</p>
-<p>General Overview
-- Vuforia
-- Unity Applications
-- OpenCV Integration</p></article>
- 
-</slide>
+		// future dsq_reset function
+		var dsq_reset;
 
-<slide class="segue dark nobackground" >
-  
-    <aside class="gdbar"><img src="images/ualr_logo_128.png"></aside>
-    <hgroup class="auto-fadein">
-      <h2>Qualcomm</h2>
-      <h3>An Overview</h3>
-    </hgroup>
-  
-</slide>
+		function loadPage(str) {
+			var page = $("#viewer-thingy");
+			$("#num").html("");
+			page.fadeOut(300, function () {
+				// timestamp to combat caching
+				page.load("pages/"+str+".html?time="+new Date().getTime(), function () {
+					page.fadeIn(300);
+				});
+			});
 
-<slide  >
-  
-    <hgroup>
-      <h2>Qualcomm</h2>
-      <h3>The Parent Company</h3>
-    </hgroup>
-    <article ><p>Qualcomm designed and currently maintains the Vuforia SDK. They have been in the Fortune 500 since 2003 and  still continue to be a leader in product innovation.</p>
-<p>Sample Fields of study
-- Automotive
-- Healthcare
-- Networking
-- Wearables</p></article>
- 
-</slide>
+			// page url change
+			location.hash = "#!" + str;
+		}
 
-<slide  >
-  
-    <hgroup>
-      <h2>Qualcomm Products</h2>
-      <h3>Snapdragon Mobile Processors</h3>
-    </hgroup>
-    <article ><p>The Snapdragon processor is state of the art for mobile phones</p>
-<p>Featured in the new Moto X and the Samsung Galaxy Note 4</p></article>
- 
-</slide>
+		function nextPage () {
+			index = (index + 1) % sites.length;
+			loadPage(sites[index]);
+		}
 
-<slide  >
-  
-    <hgroup>
-      <h2>Qualcomm Products</h2>
-      <h3>HomePlug</h3>
-    </hgroup>
-    <article ><p>A link to the official video can be found
-<a href="https://www.youtube.com/watch?v=cx-X0UsWCG8">here</a></p>
-<div class="ytvideo">
-    <object width="640" height="390" class="ytvideo">
-        <param name="movie" value="https://www.youtube.com/v/cx-X0UsWCG8?version=3&autoplay=0&autohide=1&rel=0"></param>
-        <param name="allowScriptAccess" value="always"></param>
-        <embed src="https://www.youtube.com/v/cx-X0UsWCG8?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
-    </object>
-</div></article>
- 
-</slide>
+		function prevPage () {
+			index = (index + (sites.length - 1)) % sites.length;
+			loadPage(sites[index]);
+		}
 
-<slide class="segue dark nobackground" >
-  
-    <aside class="gdbar"><img src="images/ualr_logo_128.png"></aside>
-    <hgroup class="auto-fadein">
-      <h2>Vuforia - Features</h2>
-      <h3>Application Overview</h3>
-    </hgroup>
-  
-</slide>
+		var keypressFunc = function(e) {
+			if ((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
+				var key = e.keyCode;
+				if (e.keyCode >= 48 && e.keyCode <= 57) {
+					key -= 48;
+				} else if (e.keyCode >= 96 && e.keyCode <= 105) {
+					key -= 96;
+				}
+				loadPage(sites[key]);
+			} else {
+				if (konami > 0){konami_code(e);}
+				switch(e.which) {
+					case 37: // left
+					prevPage();
+					break;
 
-<slide  >
-  
-    <hgroup>
-      <h2>Vuforia Applications</h2>
-      <h3>Text Recognition</h3>
-    </hgroup>
-    <article ><p>This example application was created by Qualcomm. A link to the official video
-can be found <a href="https://www.youtube.com/watch?v=KLqFQ2u52iU">here</a></p>
-<div class="ytvideo">
-    <object width="640" height="390" class="ytvideo">
-        <param name="movie" value="https://www.youtube.com/v/KLqFQ2u52iU?version=3&autoplay=0&autohide=1&rel=0"></param>
-        <param name="allowScriptAccess" value="always"></param>
-        <embed src="https://www.youtube.com/v/KLqFQ2u52iU?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
-    </object>
-</div></article>
- 
-</slide>
+					case 39: // right
+					nextPage();
+					break;
 
-<slide  >
-  
-    <hgroup>
-      <h2>Vuforia Applications</h2>
-      <h3>Object Recognition</h3>
-    </hgroup>
-    <article ><p>This example application was created by Qualcomm. A link to the official video
-can be found <a href="https://www.youtube.com/watch?v=mXpr37pR34U">here</a></p>
-<div class="ytvideo">
-    <object width="640" height="390" class="ytvideo">
-        <param name="movie" value="https://www.youtube.com/v/mXpr37pR34U?version=3&autoplay=0&autohide=1&rel=0"></param>
-        <param name="allowScriptAccess" value="always"></param>
-        <embed src="https://www.youtube.com/v/mXpr37pR34U?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
-    </object>
-</div></article>
- 
-</slide>
+					case 38: // first konami code char
+					if (konami == 0){konami_code(e);}
+					break;
 
-<slide  >
-  
-    <hgroup>
-      <h2>Vuforia Applications</h2>
-      <h3>Smart Terrain</h3>
-    </hgroup>
-    <article ><p>This example application was created by Qualcomm. A link to the official video
-can be found <a href="https://www.youtube.com/watch?v=UOfN1plW_Hw">here</a></p>
-<div class="ytvideo">
-    <object width="640" height="390" class="ytvideo">
-        <param name="movie" value="https://www.youtube.com/v/UOfN1plW_Hw?version=3&autoplay=0&autohide=1&rel=0"></param>
-        <param name="allowScriptAccess" value="always"></param>
-        <embed src="https://www.youtube.com/v/UOfN1plW_Hw?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
-    </object>
-</div></article>
- 
-</slide>
+					default: return; // exit this handler for other keys
+				}
+			}
+			e.preventDefault(); // prevent the default action (scroll / move caret)
+		};
 
-<slide  >
-  
-    <hgroup>
-      <h2>Vuforia Applications</h2>
-      <h3>Cylindrical Targets</h3>
-    </hgroup>
-    <article ><p>This example application was created by Qualcomm. A link to the official video
-can be found <a href="https://www.youtube.com/watch?v=LqgmlkJcqA4">here</a></p>
-<div class="ytvideo">
-    <object width="640" height="390" class="ytvideo">
-        <param name="movie" value="https://www.youtube.com/v/LqgmlkJcqA4?version=3&autoplay=0&autohide=1&rel=0"></param>
-        <param name="allowScriptAccess" value="always"></param>
-        <embed src="https://www.youtube.com/v/LqgmlkJcqA4?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
-    </object>
-</div></article>
- 
-</slide>
+		// keypress stuff
+		$(document).keydown(keypressFunc);
 
-<slide class="segue dark nobackground" >
-  
-    <aside class="gdbar"><img src="images/ualr_logo_128.png"></aside>
-    <hgroup class="auto-fadein">
-      <h2>Vuforia - Setting Up</h2>
-      <h3>Getting Started</h3>
-    </hgroup>
-  
-</slide>
+		// get value from hash
+		function getHashValue() {
+			return location.hash.match(new RegExp('!([^&]*)'))[1];
+		}
 
-<slide  >
-  
-    <hgroup>
-      <h2>Vuforia Account</h2>
-      <h3>Creating a Developer Account</h3>
-    </hgroup>
-    <article ><p>Registering for a developer account is easy and can be found
-<strong><a href="https://developer.vuforia.com/user/register">here</a></strong></p>
-<p>Enter your information and sign up for a free developer account.</p></article>
- 
-</slide>
+		// load default page & set hash or
+		$(function () {
+			var page;
+			if (location.hash != "" &&
+				(page = getHashValue()) &&
+				page != "" &&
+				$.inArray(page, sites) > -1) {
+				loadPage(page);
+			} else {
+				loadPage(sites[index]);
+			}
+		})
+		</script>
+		<noscript>Yo bro, we need js.</noscript>
 
-<slide  >
-  
-    <hgroup>
-      <h2>Unity Extension</h2>
-      <h3>Resource Page Navigation</h3>
-    </hgroup>
-    <article ><p>The navigation bar on the top of the page has links to various sites available to
-developers.</p>
-<p>Go ahead and click the Resource tab</p>
-<p>The bar on the left contains extensions for Android, iOS, and Unity. For this tutorial,
-download the current extension for Unity.</p></article>
- 
-</slide>
+		<!-- Console Message -->
+		<script>
+		console.log("try: konami(↑↑↓↓←→←→ba↩)");
+		</script>
 
-<slide  >
-  
-    <hgroup>
-      <h2>Importing to Unity</h2>
-      <h3>Click the Extension</h3>
-    </hgroup>
-    <article ><p>With Unity open, run the extension from the download location, and import all the files.</p>
-<p>This extension will import the Vuforia SDK into the root directory of the project.</p></article>
- 
-</slide>
+		<h1 id='begin'>void main () {</h1>
 
-<slide class="segue dark nobackground" >
-  
-    <aside class="gdbar"><img src="images/ualr_logo_128.png"></aside>
-    <hgroup class="auto-fadein">
-      <h2>Getting to know Vuforia</h2>
-      <h3>The Insides</h3>
-    </hgroup>
-  
-</slide>
+		<!-- Links -->
+		<h2>print("Hello!");</h2>
+		<article>
+			<p>
+				Welcome, here are a couple of pages you might be interested in:
+			</p> <p>
+				<a onclick="loadPage('Ramblings');">Ramblings</a>: a page of poorly written stuffs.
+			</p> <p>
+				<a onclick="loadPage('Projects');">Projects</a>: a page of more poorly written stuffs, this time with code.
+			</p>
+		</article>
+		<div id="buttons">
+			<div onclick="prevPage();">prev</div>
+			<div onclick="nextPage();">next</div>
+		</div>
 
-<slide  >
-  
-    <hgroup>
-      <h2>Getting to know Vuforia</h2>
-      <h3>File System</h3>
-    </hgroup>
-    <article ><p>Editor and Plugins folders
-    Contains the code</p>
-<p>Qualcomm Augmented Reality
-    Contains important resources</p>
-<p>StreamingAssets
-    Contains the target databases from the developer portal</p></article>
- 
-</slide>
+		<!-- Stuffs goes here -->
+		<div id="viewer-thingy">
 
-<slide  >
-  
-    <hgroup>
-      <h2>Getting to know Vuforia</h2>
-      <h3>Asset Analysis</h3>
-    </hgroup>
-    <article ></article>
- 
-</slide>
+		</div>
 
+		<h1 id='end'>}</h1>
 
-<slide class="thank-you-slide segue nobackground">
-  <aside class="gdbar right"><img src="images/ualr_logo_128.png"></aside>
-  <article class="flexbox vleft auto-fadein">
-    <h2>&lt;Thank You!&gt;</h2>
-    <p>Here's some contact information.</p>
-  </article>
-  <p class="auto-fadein" data-config-contact>
-    <!-- populated from slide_config.json -->
-  </p>
-</slide>
-
-<slide class="logoslide dark nobackground">
-  <article class="flexbox vcenter">
-    <span><img src="images/ualr_logo_white_128.png"></span>
-  </article>
-</slide>
-
-<slide class="backdrop"></slide>
-
-</slides>
-
-<script>
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
-
-<!--[if IE]>
-  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
-  <script>CFInstall.check({mode: 'overlay'});</script>
-<![endif]-->
-</body>
+	</body>
 </html>
