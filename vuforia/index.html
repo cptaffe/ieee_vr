@@ -43,263 +43,332 @@
 			<div class="slides">
 				<section data-markdown>
 					<script type="text/template">
-
-<img src="ualr-logo.svg" width=300px style="background:none; border:none; box-shadow:none;"></img>
-
-## Emerging Analytics Center
-
-presents
+						<img src="ualr-logo.svg" width=300px style="background:none; border:none; box-shadow:none;"></img>
+						## Emerging Analytics Center presents
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-
-# Vuforia
+						# Vuforia
+						## An Augmented Reality Tutorial
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-# Introduction
+						# Introduction
 
-Augmented Reality (AR) is the next generation for technology as it incorporates the real world with the virtual world. Vuforia is a high-level API that allows developers to easily design these applications for the general public with development time.
+						Augmented Reality (AR) is the next generation
+						for technology as it incorporates the real world
+						with the virtual world. Vuforia is a high-level
+						API that allows developers to easily design
+						these applications for the general public
+						with development time. Vuforia works with Andriod,
+						iOS, and the Unity Game Engine.
 
-This tutorial will cover the usage of Vuforia in standalone applications as well as paired with OpenCV to create an immersive experience.
+						This tutorial will cover the usage of Vuforia in
+						standalone applications as well as paired with
+						OpenCV to create an immersive experience.
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-# Introduction
+						# Laptop Usage
 
-We encourage you to view the presentation from your laptops as reference during the example projects. The presentation is being hosted online at [byteflame.org/ieee_vr](//byteflame.org/ieee_vr)
-
-## General Overview
-
-- Vuforia
-- Unity Applications
-- OpenCV Integration
+						We encourage you to view the presentation from
+						your laptops as reference during the example
+						projects. The presentation is being hosted
+						online at
+						[byteflame.org/ieee_vr](//byteflame.org/ieee_vr)
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-# Qualcomm
-## An Overview
+						## General Overview
+						- Vuforia
+						- Unity Applications
+						- OpenCV Integration
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-# Qualcomm
-## The Parent Company
-
-Qualcomm designed and currently maintains the Vuforia SDK. They have been a Fortune 500 company since 2003 and continue to be a leader in product innovation.
-
-Sample Fields of study
-
-- Automotive
-- Healthcare
-- Networking
-- Wearables
+						# Qualcomm
+						## An Overview
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-## Snapdragon Mobile Processors
+						# Qualcomm
+						## The Parent Company
 
-The Snapdragon processor is state of the art for mobile phones
+						Qualcomm designed and currently maintains the
+						Vuforia SDK. They have been a Fortune 500
+						company since 2003 and continue to be a leader
+						in product innovation.
 
-Featured in the new Moto X and the Samsung Galaxy Note 4
+						Sample fields of research
+						- Automotive
+						- Healthcare
+						- Networking
+						- Wearables
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-## HomePlug
+						## Snapdragon Mobile Processors
 
-A link to the official video can be found [here](https://www.youtube.com/watch?v=cx-X0UsWCG8)
+						The Snapdragon processor is state of the art for
+						mobile phones.
 
-<object width="640" height="390" class="ytvideo">
-	<param name="movie" value="https://www.youtube.com/v/cx-X0UsWCG8?version=3&autoplay=0&autohide=1&rel=0"></param>
-	<param name="allowScriptAccess" value="always"></param>
-	<embed src="https://www.youtube.com/v/cx-X0UsWCG8?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
-</object>
-
+						Featured in the new Moto X and the Samsung
+						Galaxy Note 4
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-# Vuforia
-## Application Overview
+						## HomePlug
 
+						A link to the official video can be found
+						[here](https://www.youtube.com/watch?v=cx-X0UsWCG8)
+
+						<object width="640" height="390">
+							<param name="movie" value="https://www.youtube.com/v/cx-X0UsWCG8?version=3&autoplay=0&autohide=1&rel=0"></param>
+							<param name="allowScriptAccess" value="always"></param>
+							<embed src="https://www.youtube.com/v/cx-X0UsWCG8?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
+						</object>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-## Text Recognition
-
-This example application was created by Qualcomm. A link to the official video can be found [here](https://www.youtube.com/watch?v=KLqFQ2u52iU)
-
-<object width="640" height="390" class="ytvideo">
-		<param name="movie" value="https://www.youtube.com/v/KLqFQ2u52iU?version=3&autoplay=0&autohide=1&rel=0"></param>
-		<param name="allowScriptAccess" value="always"></param>
-		<embed src="https://www.youtube.com/v/KLqFQ2u52iU?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
-</object>
+						# Vuforia
+						## Application Overview
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-## Object Recognition
+						## Text Recognition
 
-This example application was created by Qualcomm. A link to the official video
-can be found [here](https://www.youtube.com/watch?v=mXpr37pR34U)
+						This example application was created by Qualcomm.
+						A link to the official video can be found
+						[here](https://www.youtube.com/watch?v=KLqFQ2u52iU)
 
-<object width="640" height="390" class="ytvideo">
-	<param name="movie" value="https://www.youtube.com/v/mXpr37pR34U?version=3&autoplay=0&autohide=1&rel=0"></param>
-	<param name="allowScriptAccess" value="always"></param>
-	<embed src="https://www.youtube.com/v/mXpr37pR34U?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
-</object>
+						<object width="640" height="390">
+							<param name="movie" value="https://www.youtube.com/v/KLqFQ2u52iU?version=3&autoplay=0&autohide=1&rel=0"></param>
+							<param name="allowScriptAccess" value="always"></param>
+							<embed src="https://www.youtube.com/v/KLqFQ2u52iU?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
+						</object>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-## Smart Terrain
+						## Object Recognition
 
-This example application was created by Qualcomm. A link to the official video can be found [here](https://www.youtube.com/watch?v=UOfN1plW_Hw)
+						This example application was created by Qualcomm.
+						A link to the official video can be found
+						[here](https://www.youtube.com/watch?v=mXpr37pR34U)
 
-<object width="640" height="390" class="ytvideo">
-		<param name="movie" value="https://www.youtube.com/v/UOfN1plW_Hw?version=3&autoplay=0&autohide=1&rel=0"></param>
-		<param name="allowScriptAccess" value="always"></param>
-		<embed src="https://www.youtube.com/v/UOfN1plW_Hw?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
-</object>
-
+						<object width="640" height="390">
+							<param name="movie" value="https://www.youtube.com/v/mXpr37pR34U?version=3&autoplay=0&autohide=1&rel=0"></param>
+							<param name="allowScriptAccess" value="always"></param>
+							<embed src="https://www.youtube.com/v/mXpr37pR34U?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
+						</object>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
+						## Smart Terrain
 
-## Cylindrical Targets
+						This example application was created by Qualcomm.
+						A link to the official video can be found
+						[here](https://www.youtube.com/watch?v=UOfN1plW_Hw)
 
-This example application was created by Qualcomm. A link to the official video can be found [here](https://www.youtube.com/watch?v=LqgmlkJcqA4)
-
-<object width="640" height="390" class="ytvideo">
-	<param name="movie" value="https://www.youtube.com/v/LqgmlkJcqA4?version=3&autoplay=0&autohide=1&rel=0"></param>
-	<param name="allowScriptAccess" value="always"></param>
-	<embed src="https://www.youtube.com/v/LqgmlkJcqA4?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
-</object>
-
+						<object width="640" height="390">
+								<param name="movie" value="https://www.youtube.com/v/UOfN1plW_Hw?version=3&autoplay=0&autohide=1&rel=0"></param>
+								<param name="allowScriptAccess" value="always"></param>
+								<embed src="https://www.youtube.com/v/UOfN1plW_Hw?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
+						</object>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
+						## Cylindrical Targets
 
-# Vuforia
-## Getting Started
+						This example application was created by Qualcomm.
+						A link to the official video can be found
+						[here](https://www.youtube.com/watch?v=LqgmlkJcqA4)
 
+						<object width="640" height="390">
+							<param name="movie" value="https://www.youtube.com/v/LqgmlkJcqA4?version=3&autoplay=0&autohide=1&rel=0"></param>
+							<param name="allowScriptAccess" value="always"></param>
+							<embed src="https://www.youtube.com/v/LqgmlkJcqA4?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
+						</object>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-
-## Creating a Developer Account
-
-Registering for a developer account is easy and can be found __[here](https://developer.vuforia.com/user/register)__
-
-Enter your information and sign up for a free developer account.
-
+						# Vuforia
+						## Getting Started
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
+						## Creating a Developer Account
 
-## Unity Extension
-### Resource Page Navigation
+						Registering for a developer account is easy and can be found
+						[here](https://developer.vuforia.com/user/register)
 
-The navigation bar on the top of the page has links to various sites available to developers.
-
-Click the __Resource__ tab.
-
-<!-- Illustration -->
-<img src="illustration0.png" width=700px></img>
-
+						Enter your information and sign up for a free
+						developer account.
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
+						## Unity Extension
+						### Resource Page Navigation
 
-## Unity Extension
-### Resource Page Navigation
+						The navigation bar on the top of the page has
+						links to various sites available to developers.
 
-The bar on the left contains extensions for Android, iOS, and Unity. For this tutorial, download the current extension for Unity.
+						Click the __Resource__ tab.
 
-
-<!-- Illustration -->
-<img src="illustration1.png" width=700px></img>
-
+						<!-- Illustration -->
+						<img src="illustration0.png" width=700px></img>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
+						## Unity Extension
+						### Resource Page Navigation
 
-## Importing to Unity
+						The bar on the left contains extensions for
+						Android, iOS, and Unity. For this tutorial,
+						download the current extension for Unity.
 
-With Unity open, run the extension from the download location, and import all the files.
-
-This extension will import the Vuforia SDK into the root directory of the project.
-
+						<!-- Illustration -->
+						<img src="illustration1.png" width=700px></img>
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
+						## Importing to Unity
 
-# Getting to know Vuforia
-## The Insides
+						With Unity open, run the extension from the
+						download location, and import all the files.
 
+						This extension will import the Vuforia SDK into
+						the root directory of the project.
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-
-## File System
-
-### Editor and Plugins folders
-Contains the code
-
-### Qualcomm Augmented Reality
-Contains important resources
-
-### StreamingAssets
-Contains the target databases from the developer portal
-
+						# Getting to know Vuforia
+						## The Insides
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
+						## File System
 
-# Getting to know Vuforia
-## Asset Analysis
+						### Editor and Plugins folders
+						Contains the code
 
+						### Qualcomm Augmented Reality
+						Contains important resources
+
+						### StreamingAssets
+						Contains the target databases
+						from the developer portal
 					</script>
 				</section>
 
+				<section data-markdown>
+					<script type="text/template">
+						# Getting to know Vuforia
+						## Prefab Analysis
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## ARCamera
+
+						This is the required camera object for Vuforia.
+						You __must__ replace the default Unity camera
+						with this one.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## ImageTarget
+
+						This is the default trackable object for Vuforia.
+
+						Once you import your
+					</script>
+				</section>
+
+
+				<section data-markdown>
+					<script type="text/template">
+						## ImageTarget, cont.
+
+
+						- Data Set - From the developer network
+						- Image Target - The specific target to search for
+
+						<!-- Illustration -->
+						<img src="illustration2.png" width=274px></img>
+					</script>
+				</section>
+
+				<!-- OpenCV Vuforia Integration Project -->
+
+				<section data-markdown>
+					<script type="text/template">
+						# OpenCV - Vuforia
+						## Integration
+					</script>
+				</section>
+
+
+				<section data-markdown>
+					<script type="text/template">
+						<img src="ualr-logo.svg" width=300px style="background:none; border:none; box-shadow:none;"></img>
+						## Emerging Analytics Center
+
+						Thank you
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						<img src="ualr-logo.svg" width=300px style="background:none; border:none; box-shadow:none;"></img>
+						## Emerging Analytics Center
+
+						Questions And Answers Segment
+					</script>
+				</section>
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
