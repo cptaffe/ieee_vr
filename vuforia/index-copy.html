@@ -54,7 +54,7 @@
                         ## An Augmented Reality Tutorial
 
                         Alex Jaeger
-                        
+
                         Connor Taffe
                     </script>
                 </section>
@@ -256,218 +256,296 @@
                     </script>
                 </section>
 
-                <script type="text/template">
-                    # Vuforia
-                    ## Getting Started
-                </script>
-            </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        # Vuforia
+                        ## Getting Started
+                    </script>
+                </section>
 
-            <section data-markdown>
-                <script type="text/template">
-                    ## Creating a Developer Account
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Creating a Developer Account
 
-                    Registering for a developer account is easy and can be found
-                    [here](https://developer.vuforia.com/user/register)
+                        Registering for a developer account is easy and can be found
+                        [here](https://developer.vuforia.com/user/register)
 
-                    Before downloading the SDK or creating device databases,
-                    developers must first register, fortunately this is easy.
+                        Before downloading the SDK or creating device databases,
+                        developers must first register, fortunately this is easy.
 
-                    Take some time now to complete the registration form and
-                    verify the new account via email.
-                </script>
-            </section>
+                        Take some time now to complete the registration form and
+                        verify the new account via email.
+                    </script>
+                </section>
 
-            <section data-markdown>
-                <script type="text/template">
-                    ## Database Creation
-                    ### Target Manager
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Download Vuforia
+                        ### Get the package
 
-                    The navigation bar on the top of the page has
-                    links to various sites available to developers.
+                        The navigation bar on the top of the page has
+                        links to various sites available to developers.
 
-                    <!-- Illustration -->
-                    <img src="imgs/navbar.png" width=700px></img>
+                        <!-- Illustration -->
+                        <img src="./imgs/navbar.png" width=700px></img>
 
-                    After logging in, navigate to the Target Manager page
-                    via the navigation bar.
-                </script>
-            </section>
+                        After logging in, navigate to the Resources page
+                        via the navigation bar.
+                    </script>
+                </section>
 
-            <section data-markdown>
-                <script type="text/template">
-                    ## Database Creation
-                    ### Target Manager. cont
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Download Vuforia
+                        ### Get the package, cont.
 
-                    This is the location to access your device databases
-                    as well as your cloud databases.
+                        Download the current Unity Extension by selecting the
+                        "Unity Extension" tab on the right side of the screen.
 
-                    From here, you can access individual targets through
-                    the selected database.
-                </script>
-            </section>
+                        Once the package is downloaded, open it using Unity and
+                        import the contents.
 
-            <section data-markdown>
-                <script type="text/template">
-                    ## Database Creation
-                    ### Device vs Cloud
+                        <img src="./imgs/Unity.PNG">
+                    </script>
+                </section>
 
-                    Device Database
+                <section data-markdown>
+                    <script type="text/template">
+                        ## File System
+                        ### Quick Overview
 
-                        - Stored on Device
-                        - Packaged with App or Loaded at Runtime
-                        - Max limit of 100 targets per Database
-                        - No Charge
+                        Most things needed to build applications will be found
+                        here.
 
-                    Cloud Database
+                        - __./Qualcomm Augmented Reality/__
+                            - __Prefabs/__
+                                - Location of various targets to use
+                                - Location of __ARCamera__
+                    </script>
+                </section>
 
-                        - Can host more than 1 million targets per database
-                        - Apps can be updated instantly
-                        - Costs money
-                </script>
-            </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Database Creation
+                        ### Target Manager
 
-            <section data-markdown>
-                <script type="text/template">
-                    ## Database Creation
-                    ### Device Databases
+                        The navigation bar on the top of the page has
+                        links to various sites available to developers.
 
-                    To create a new Device Database, make sure you are in the
-                    "Device Database" Tab and click on the "Create Database"
-                    button.
+                        <!-- Illustration -->
+                        <img src="./imgs/navbar.png" width=700px></img>
 
-                    Give the database a name and you are good to go.
-                </script>
-            </section>
+                        After logging in, navigate to the Target Manager page
+                        via the navigation bar.
+                    </script>
+                </section>
 
-            <section data-markdown>
-                <script type="text/template">
-                    ## Database Creation
-                    ### Cloud Databases
-                    #### Plan Overview
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Database Creation
+                        ### Target Manager. cont
 
-                    Warning! Cloud Databases can cost money!
+                        This is the location to access your device databases
+                        as well as your cloud databases.
 
-                    <img src="imgs/cloudplan.png" height="353" width="931">
-                </script>
-            </section>
+                        From here, you can access individual targets through
+                        the selected database.
+                    </script>
+                </section>
 
-            <section data-markdown>
-                <script type="text/template">
-                    ## Database Creation
-                    ### Cloud Databases
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Database Creation
+                        ### Device vs Cloud
 
-                    To create a new Cloud Database, make sure you are in the
-                    "Cloud Database" Tab and click on the "Create Database"
-                    button.
+                        Device Database
 
-                    Give the database a name, select a plan, accept the
-                    agreement and you are good to go.
-                </script>
-            </section>
+                            - Stored on Device
+                            - Packaged with App or Loaded at Runtime
+                            - Max limit of 100 targets per Database
+                            - No Charge
 
-            <section data-markdown>
-                <script type="text/template">
-                    ## Target Creation
-                    ### Value Overview
-                    #### Name
+                        Cloud Database
 
-                    - Must be unique within the database
-                    - Should describe the image
-                    - Can be changed later
-                    - Can only include letters, numbers, and underscore
-                </script>
-            </section>
+                            - Can host more than 1 million targets per database
+                            - Apps can be updated instantly
+                            - Costs money
+                    </script>
+                </section>
 
-            <section data-markdown>
-                <script type="text/template">
-                    ## Target Creation
-                    ### Value Overview
-                    #### Dimensions
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Database Creation
+                        ### Device Databases
 
-                    - This value has to be the same scale as your
-                    augmentation.
-                    - That is, this value must have the same units as the
-                    augmentation (such as Unity)
-                </script>
-            </section>
+                        To create a new Device Database, make sure you are in the
+                        "Device Database" Tab and click on the "Create Database"
+                        button.
 
-            <section data-markdown>
-                <script type="text/template">
-                    ## Target Creation
-                    ### Value Overview
-                    #### Image File
+                        Give the database a name and you are good to go.
+                    </script>
+                </section>
 
-                    - Must be 8/24 bit PNG or RGB/Greyscale JPG
-                    - Maximum file size is 2.25MB
-                </script>
-            </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Database Creation
+                        ### Cloud Databases
+                        #### Plan Overview
 
-            <section data-markdown>
-                <script type="text/template">
-                    ## Target Creation
-                    ### Image Target
+                        Warning! Cloud Databases can cost money!
 
-                    <img src="imgs/imagetarget.png" width="556" height="500">
-                </script>
-            </section>
+                        <img src="./imgs/cloudplan.PNG" height="353" width="931">
+                    </script>
+                </section>
 
-            <section data-markdown>
-                <script type="text/template">
-                    ## Target Creation
-                    ### Cube Target
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Database Creation
+                        ### Cloud Databases
 
-                    <img src="imgs/cubetarget.png" width="556" height="500">
-                </script>
-            </section>
+                        To create a new Cloud Database, make sure you are in the
+                        "Cloud Database" Tab and click on the "Create Database"
+                        button.
 
-            <section data-markdown>
-                <script type="text/template">
-                    ## Target Creation
-                    ### Cuboid Target
+                        Give the database a name, select a plan, accept the
+                        agreement and you are good to go.
+                    </script>
+                </section>
 
-                    <img src="imgs/cuboidtarget.png" width="556" height="500">
-                </script>
-            </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Target Creation
+                        ### Value Overview
+                        #### Name
 
-            <section data-markdown>
-                <script type="text/template">
-                    ## Target Creation
-                    ### Cylinder Target
+                        - Must be unique within the database
+                        - Should describe the image
+                        - Can be changed later
+                        - Can only include letters, numbers, and underscore
+                    </script>
+                </section>
 
-                    <img src="imgs/cylindertarget.png" width="556" height="500">
-                </script>
-            </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Target Creation
+                        ### Value Overview
+                        #### Dimensions
 
-            <section data-markdown>
-                <script type="text/template">
-                    ## Target Creation
-                    ### Checking Augmentability
+                        - This value has to be the same scale as your
+                         augmentation.
+                        - That is, this value must have the same units as the
+                        augmentation (such as Unity)
+                    </script>
+                </section>
 
-                    After creating a new Target, its important to check the
-                    Augmentable Rating for the image.
-                </script>
-            </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Target Creation
+                        ### Value Overview
+                        #### Image File
 
-            <section data-markdown>
-                <script type="text/template">
-                    <img src="imgs/augmentability.png" width="961" height="665">
-                </script>
-            </section>
+                        - Must be 8/24 bit PNG or RGB/Greyscale JPG
+                        - Maximum file size is 2.25MB
+                    </script>
+                </section>
 
-            <section data-markdown>
-                <script type="text/template">
-                    ## Target Creation
-                    ### Increasing Augmentability
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Target Creation
+                        ### Image Target
 
-                    - Increase the number of features
-                        - Increase the number of sharp details, such as corners or spikes
-                    - Increase contrast
-                    - Increase the feature distribution
-                        - The better the distribution, the better the trackability
-                    - Avoid organic shapes
-                    - Avoid repetitive patterns
-                </script>
-            </section>
+                        <img src="./imgs/imagetarget.PNG" width="556" height="500">
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Target Creation
+                        ### Cube Target
+
+                        <img src="imgs/cubetarget.PNG" width="556" height="500">
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Target Creation
+                        ### Cuboid Target
+
+                        <img src="imgs/cuboidtarget.PNG" width="556" height="500">
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Target Creation
+                        ### Cylinder Target
+
+                        <img src="imgs/cylindertarget.PNG" width="556" height="500">
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Target Creation
+                        ### Checking Augmentability
+
+                        After creating a new Target, its important to check the
+                        Augmentable Rating for the image.
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <img src="imgs/augmentability.PNG" width="961" height="665">
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Target Creation
+                        ### Increasing Augmentability
+
+                        - Increase the number of features
+                            - Increase the number of sharp details, such as corners or spikes
+                        - Increase contrast
+                        - Increase the feature distribution
+                            - The better the distribution, the better the trackability
+                        - Avoid organic shapes
+                        - Avoid reptetive patterns
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Target Usage
+                        ### Downloading the Target
+
+                        Navigate into your database and select all the targets you
+                        wish to import into your application. With all targets
+                        selected, press "Download Selected Targets".
+
+                        Make sure you download the format suitable for the Unity
+                        Editor.
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Target Usage
+                        ### Importing the Target
+
+                        Import the target into your Vuforia Unity Project by clicking
+                        the downloaded package with Unity open.
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+
+                    </script>
+                </section>
+
                 <section data-markdown>
                     <script type="text/template">
                         # Getting to know Vuforia
