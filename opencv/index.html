@@ -84,7 +84,7 @@
 					<script type="text/template">
 						# Computer Vision
 
-						<img src="imgs/computer_vision_app.svg.png">
+						<img src="imgs/computer_vision_app.svg.png"> <font size="1">http://en.wikipedia.org/wiki/File:CVoverview2.svg</font>
 
 						Computer Vision has many applications.
 
@@ -105,7 +105,8 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						# OpenCV <img src="imgs/opencv_logo.png">
+						<img src="imgs/opencv_logo.png"> <font size="1">http://opencv.org/</font>
+						# OpenCV
 						## An Overview
 
 						OpenCV is an open source computer vision library that is maintained by intel. OpenCV is targeted for real time applications.
@@ -151,7 +152,8 @@
 						# OpenCV
 						## The Modules
 
-						OpenCV has been in development since 2000.  It is an extremely mature library and contains over 2500 classic and state-of-the-art algorithms for solving problems in Computer Vision.
+						OpenCV has been in development since 2000.  It is an extremely mature library and contains over 2500 classic and
+						state-of-the-art algorithms for solving problems in Computer Vision.
 
 						OpenCV's main functinality is contained in a set of modules.  Each module contains a different functinality of OpenCV.
 					</script>
@@ -227,7 +229,7 @@
 
 						In this example, cascade classifiers are being used to detect the face and eyes.
 
-						<img src="imgs/cascade_classifier.jpg" width="300" height="300">
+						<img src="imgs/cascade_classifier.jpg" width="300" height="300"> <font size="1">http://docs.opencv.org/doc/tutorials/objdetect/cascade_classifier/cascade_classifier.html</font>
 					</script>
 				</section>
 
@@ -297,6 +299,51 @@
 						- gpu. GPU-accelerated Computer Vision
 						- photo. Computational Photography
 						- stitching. Images stitching
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						# OpenCV
+						## Techniques
+
+						There are many ways of detecting hands through OpenCV.  We will be using cascade classifiers.
+
+						In addition to cascade classifiers, we could use background subtraction or edge detection.
+
+						Techniques for detecting bodily parts are not limited to the aforementioned techniques.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						# OpenCV
+						## Background Subtraction
+
+						In background subtraction, you can extract the outline of foreground images based on a threshold value.
+
+						<img src="imgs/background_subtraction.png"/> <font size="1">http://docs.opencv.org/trunk/doc/py_tutorials/py_imgproc/py_canny/py_canny.html</font>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						# OpenCV
+						## Edge Detection
+
+						The imgproc module has functions for manipulating images.  By using a combination of blurring and grayscaling, the
+						background noise can be reduced so that when the edge detection function is called, it will detect the outline of the hand.
+
+						<img src="imgs/edge_detection.jpg"/> <font size="1">http://docs.opencv.org/modules/imgproc/doc/feature_detection.html</font>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						# OpenCV
+						## Techniques
+
+						Well trained classifiers are likley the most reliable and simplest option.
 					</script>
 				</section>
 
