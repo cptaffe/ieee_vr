@@ -91,15 +91,6 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						## General Overview
-						- Vuforia
-						- Unity Applications
-						- OpenCV Integration
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
 						# Qualcomm
 						## An Overview
 					</script>
@@ -194,6 +185,55 @@
 
 				<section data-markdown>
 					<script type="text/template">
+						## Vuforia
+
+						Through the use of Unity, Android, or iOS, developers and
+						non-developers are able to create an augmented world through
+						their smartphone, laptop, or desktop.
+
+						With Vuforia, the possibilites of a perfect world, perfect
+						furniture, or perfect videogame are endless.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Vuforia
+
+						Vuforia is a professional, mature software developer
+						kit allowing a multitude of features with limited latency.
+						Vuforia allow various target tracking from images to
+						words with the ability to project high resolution textures.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Vuforia
+
+						Developers have created over 15,000 smartphone apps using
+						the Vuforia SDK. Companies such as Samsung and Toyato are
+						experimenting with Vuforia to enhance user interaction.
+
+						(I am not associated with Toyota or Samsung, they presented
+						case studies to Qualcomm and this is a brief description
+						of each)
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Vuforia
+						### Samsung App Overview
+
+						"Samsung REAL" is a smartphone app, developed by Samsung and
+						be!columbus in Germany, helping users decide on the
+						appropriate sized TV
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
 						## Text Recognition
 
 						This example application was created by Qualcomm.
@@ -205,6 +245,15 @@
 							<param name="allowScriptAccess" value="always"></param>
 							<embed src="https://www.youtube.com/v/KLqFQ2u52iU?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
 						</object>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Text Recognition
+						### Implementation Overview
+
+						<img src="./imgs/Wordlists.png">
 					</script>
 				</section>
 
@@ -360,16 +409,43 @@
 
 						Device Database
 
-							- Stored on Device
-							- Packaged with App or Loaded at Runtime
-							- Max limit of 100 targets per Database
-							- No Charge
+						- Stored on Device
+						- Packaged with App or Loaded at Runtime
+						- Max limit of 100 targets per Database
+						- No Charge
 
 						Cloud Database
 
-							- Can host more than 1 million targets per database
-							- Apps can be updated instantly
-							- Costs money
+						- Can host more than 1 million targets per database
+						- Apps can be updated instantly
+						- Costs money
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Vuforia Workflow
+						### Device Database
+
+						- Create Image Files
+						- Create Device Database
+						- Upload Targets
+						- Download Database
+						- Integrate Database
+						- Publish Application
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Vuforia Workflow
+						### Cloud Database
+
+						- Create Image Files
+						- Create Cloud Database
+						- Upload Targets
+						- Integrate Database
+						- Publish Application
 					</script>
 				</section>
 
@@ -542,12 +618,6 @@
 
 				<section data-markdown>
 					<script type="text/template">
-
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
 						# Getting to know Vuforia
 						## The Insides
 					</script>
@@ -644,6 +714,16 @@
 
 				<section data-markdown>
 					<script type="text/template">
+						## Import The Database
+
+						From the Vuforia Developer Portal, download the Image
+						Target Database you wish to use and import it into your
+						Unity Project.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
 						## Implement the Camera
 
 						Import the __ARCamera__ from __Qualcomm Augmented Reality/Prefabs/__
@@ -651,6 +731,9 @@
 
 						Delete the __mainCamera__ and make sure the __ARCamera__
 						is tagged __MainCamera__ in the Inspector
+
+						In the __Data Set Load Behavior__ Script check __Load Data Set <Database Name>__
+						and check __Activate__
 					</script>
 				</section>
 
@@ -663,9 +746,13 @@
 						Import the __ImageTarget__ from __Qualcomm Augmented Reality/Prefabs/__
 						by dragging it into the heirarchy.
 
-						blah blah blah
+						In the __Image Target Behavior__ Script make sure __Data Set__
+						is set to your database and __Image Target__ is set to an
+						Image Target.
 					</script>
 				</section>
+
+				<section data-mar
 
 				<!-- OpenCV Vuforia Integration Project -->
 
