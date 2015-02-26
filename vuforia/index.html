@@ -265,62 +265,27 @@
 					</script>
 				</section>
 
+
+				<!-- FINISH SECTION -->
+
+
 				<section data-markdown>
 					<script type="text/template">
-						## Text Recognition
-						### Implementation Overview
-
-						<img src="./imgs/Wordlists.png">
+						## Vuforia
+						## Feature Set Overview
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						## Object Recognition
-
-						This example application was created by Qualcomm.
-						The official video can be found
-						[here](https://www.youtube.com/watch?v=mXpr37pR34U)
-
-						<object width="640" height="390">
-							<param name="movie" value="https://www.youtube.com/v/mXpr37pR34U?version=3&autoplay=0&autohide=1&rel=0"></param>
-							<param name="allowScriptAccess" value="always"></param>
-							<embed src="https://www.youtube.com/v/mXpr37pR34U?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
-						</object>
+						## Vuforia
+						### Feature Set Implementation
 					</script>
 				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Smart Terrain
 
-						This example application was created by Qualcomm.
-						The official video can be found
-						[here](https://www.youtube.com/watch?v=UOfN1plW_Hw)
+				<!-- -->
 
-						<object width="640" height="390">
-								<param name="movie" value="https://www.youtube.com/v/UOfN1plW_Hw?version=3&autoplay=0&autohide=1&rel=0"></param>
-								<param name="allowScriptAccess" value="always"></param>
-								<embed src="https://www.youtube.com/v/UOfN1plW_Hw?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
-						</object>
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Cylindrical Targets
-
-						This example application was created by Qualcomm.
-						The official video can be found
-						[here](https://www.youtube.com/watch?v=LqgmlkJcqA4)
-
-						<object width="640" height="390">
-							<param name="movie" value="https://www.youtube.com/v/LqgmlkJcqA4?version=3&autoplay=0&autohide=1&rel=0"></param>
-							<param name="allowScriptAccess" value="always"></param>
-							<embed src="https://www.youtube.com/v/LqgmlkJcqA4?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
-						</object>
-					</script>
-				</section>
 
 				<section data-markdown>
 					<script type="text/template">
@@ -547,6 +512,22 @@
 						## Target Creation
 						### Image Target
 
+						This is the default trackable object for Vuforia.
+
+						A package from the developer portal is loaded onto the
+						ImageTarget and image is used as the texture to search.
+
+						Once you import the image target, some settings need to be
+						changed to specify what the image target looks like in
+						real life.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Target Creation
+						### Image Target
+
 						<img src="./imgs/imagetarget.PNG" width="556" height="500">
 					</script>
 				</section>
@@ -635,78 +616,49 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						# Getting to know Vuforia
-						## The Insides
+						# Whats New in Vuforia 4.0
+						## A Quick Overview
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						## File System
+						## Vuforia 4.0
 
-						### Editor and Plugins folders
-						Contains the code
-
-						### Qualcomm Augmented Reality
-						Contains important resources
-
-						### StreamingAssets
-						Contains the target databases
-						from the developer portal
+						Qualcomm released the stable branch of Vuforia 4.0 on
+						February 25th, 2015. The update includes more functionality
+						for AR and platforms.
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						# Getting to know Vuforia
-						## Prefab Analysis
+						## Vuforia 4.0
+						### Object Recognition
+
+						Vuforia 4.0 allows apps to recognize objects, such as toys
+						and products. These objects can then be
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						## ARCamera
+						## Vuforia 4.0
+						### Vuforia Object Scanner
 
-						This is the required camera object for Vuforia.
-						You __must__ replace the default Unity camera
-						with this one.
+						The Vuforia Object Scanner creates object targets via a
+						smartphone camera. It is curently only available for
+						Android smart phones.
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						## ImageTarget
+						## Vuforia 4.0
+						### iOS 64-bit Support
 
-						This is the default trackable object for Vuforia.
-
-						A package from the developer portal is loaded onto the
-						ImageTarget and image is used as the texture to search.
-
-						Once you import the image target, some settings need to be
-						changed to specify what the image target looks like in
-						real life.
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## ImageTarget, cont.
-
-						- Data Set - From the developer network
-						- Image Target - The specific target to search for
-
-						<!-- Illustration -->
-						<img src="illustration2.png" width=274px></img>
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Other Prefabs
-
-						The other prefabs work similar to the ImageTarget prefab.
-						You specify the dataset (database) and target (image) to
-						track.
+						Developers can now create 64-bit apps targeting the iOS
+						platform.
 					</script>
 				</section>
 
