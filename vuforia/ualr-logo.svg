@@ -13,8 +13,8 @@
    height="128"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9943 custom"
-   sodipodi:docname="ualr-logo.svg">
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="ualr-logo-black.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.1569609"
-     inkscape:cx="113.43249"
-     inkscape:cy="176.71084"
+     inkscape:zoom="1.6361898"
+     inkscape:cx="114.49751"
+     inkscape:cy="65.932369"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -43,7 +43,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
