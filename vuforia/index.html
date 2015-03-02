@@ -461,6 +461,58 @@
 
 				<section data-markdown>
 					<script type="text/template">
+						## Feature Set
+						### Frame Markers
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Frame Markers
+
+						Allows an alternative to feature-based detection and tracking.
+
+						<img src="imgs/frame_marker_example_create_targets.png"></img>
+
+						Well suited for applications that need to identify unique
+						images, small images or several of the same.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Frame Markers
+						### Creation
+
+						There are 512 different frame markers, each with a unique border.
+						These are found in __./assets__ in the Vuforia SDK
+
+						[Good Design Attributes](https://developer.vuforia.com/library/articles/Best_Practices/Frame-Marker-Ideal-Attributes)
+
+						- Physical Size
+							- Typically 1-4in (3-10cm)
+						- Square Shape
+						- Size Parameter
+							- Scene Units must correspond to physical units
+						- Constrating of internal image
+						- Constrat around the border
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Frame Markers
+						### Implementation
+
+						Images used within the marker are not used for tracking
+
+						Look at the [Core Samples](https://developer.vuforia.com/downloads/samples) to learn how to implement
+						Frame Markers.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
 						# Vuforia
 						## Getting Started
 					</script>
