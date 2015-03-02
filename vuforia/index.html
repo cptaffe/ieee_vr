@@ -324,9 +324,81 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						## Vuforia
-						## Feature Set Overview
+						# Vuforia
+						## Feature Set
 					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Feature Set
+						### Extended Tracking
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Extended Tracking
+
+						Extended Tracking enhances visualizations by allowing
+						target persistence.
+
+						<img src="imgs/figure2_extended_tracking.png"></img>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Extended Tracking
+						### Implementation
+
+						If the environment or target is not static, then
+						__Persistent Extended Tracking Mode__ may be better
+						suited as it prevents Vuforia from re rendering the target
+
+						Targets That Support Extended Tracking
+
+						- Objects
+						- Image
+						- Multi-
+						- Cylinders
+						- User-Defined
+						- Cloud Recognition
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Extended Tracking
+						### Implementation
+
+						Unity
+						<img src="imgs/ObjectTargetBehaviour404_withET.png"></img>
+				    </script>
+				</section>
+
+				<section data-markdown>
+						## Extended Tracking
+						### Implementation
+
+						C# Style Implementation 
+						<pre>
+							<code class="java">
+								// Find “chips” target in dataset
+								for (int i = 0; i < myDateSet.getNumTrackables(); i++) {
+									Trackable trackable = myDataSet.getTrackable(i);
+
+									if (trackable.getName().equals( "chips" )) {
+										// Start extended tracking on “chips” target
+
+										if (!trackable.startExtendedTracking())	{
+											DebugLog.LOGD ("Failed to start extended tracking on chips target");
+										}
+									}
+								}
+							</code>
+						</pre>
+
 				</section>
 
 				<section data-markdown>
@@ -788,6 +860,7 @@
 						## Vuforia 4.0
 						### License Manager
 
+						Vuforia 4.0 now requires users to register their applications
 
 					</script>
 				</section>
