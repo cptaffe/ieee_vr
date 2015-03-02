@@ -356,7 +356,7 @@
 
 						If the environment or target is not static, then
 						__Persistent Extended Tracking Mode__ may be better
-						suited as it prevents Vuforia from re rendering the target
+						suited as it prevents Vuforia from re-rendering the target
 
 						Targets That Support Extended Tracking
 
@@ -568,6 +568,15 @@
 
 				<section data-markdown>
 					<script type="text/template">
+						## Getting Started
+
+						This section is to serve as a hands on reference, follow
+						along as we progress.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
 						## Creating a Developer Account
 
 						Before downloading the SDK or creating device databases,
@@ -615,15 +624,43 @@
 				<section data-markdown>
 					<script type="text/template">
 						## File System
-						### Quick Overview
-
-						Most things needed to build applications will be found
-						here.
+						### Most Commonly Used
 
 						- __./Qualcomm Augmented Reality/__
 							- __Prefabs/__
-								- Location of various targets to use
+								- Location of various targets
 								- Location of __ARCamera__
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Getting Started
+						### Licensing
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Licensing
+						### License Manager
+
+						Navigate to __Develop/License Manager__
+
+						This is where the keys for your applications will be
+						stored.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Licensing
+						### Key Generation
+
+						To create a key for your new application, navigate to the
+						License Manager via __Develop/License Manager__ and
+						select __Add License Key__ and input the required
+						information.
 					</script>
 				</section>
 
@@ -639,21 +676,7 @@
 						## Database Creation
 						### Target Manager
 
-						The navigation bar on the top of the page has
-						links to various sites available to developers.
-
-						<!-- Illustration -->
-						<img src="./imgs/navbar.png" width=700px></img>
-
-						After logging in, navigate to the Target Manager page
-						via the navigation bar.
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Database Creation
-						### Target Manager
+						Navigate to the Target Manager via __Develop/Target Manager__.
 
 						This is the location to access your device databases
 						as well as your cloud databases.
@@ -765,6 +788,8 @@
 
 						Select the database you wish to add the new target and
 						press __Add Target__
+
+						If you want, use the [US Dollar Bill](http://byteflame.org/ieee_vr/dwn/vuforia/One%20Dollar%20Bill.jpg)
 					</script>
 				</section>
 
@@ -829,22 +854,6 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						## Target Creation
-						### Image Target
-
-						This is the default trackable object for Vuforia.
-
-						A package from the developer portal is loaded onto the
-						ImageTarget and image is used as the texture to search.
-
-						Once you import the image target, some settings need to be
-						changed to specify what the image target looks like in
-						real life.
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
 						## Getting Started
 						### Augmentability
 					</script>
@@ -856,6 +865,9 @@
 
 						After creating a new Target, its important to check the
 						Augmentable Rating for the image.
+
+						To do so, navigate to your image target's page and view
+						the augmentability rating
 					</script>
 				</section>
 
@@ -943,7 +955,7 @@
 						wish to import into your application. With all targets
 						selected, press "Download Selected Targets".
 
-						Make sure you download the format suitable for the Unity
+						Make sure you download the format is suitable for the Unity
 						Editor.
 					</script>
 				</section>
@@ -1012,7 +1024,6 @@
 						### License Manager
 
 						Vuforia 4.0 now requires users to register their applications
-
 					</script>
 				</section>
 
@@ -1037,21 +1048,10 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						## Import The Plugin
+						## Image Tracking with Vuforia
 
-						From the Vuforia Developer Portal, download the Unity
-						Plugin for Vuforia and import the plugin into a new
-						project.
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Import The Database
-
-						From the Vuforia Developer Portal, download the Image
-						Target Database you wish to use and import it into your
-						Unity Project.
+						This example application will use the Unity project
+						we created during the __Getting Started__ section.
 					</script>
 				</section>
 
@@ -1067,6 +1067,18 @@
 
 						In the __Data Set Load Behavior__ Script check __Load Data Set <Database Name>__
 						and check __Activate__
+
+						<img src="imgs/Datasetload.png"></img>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Implement the Camera
+
+						In the __QCARBehaviour__ script, set the App License Key
+						by copying and pasting it from the application licensed
+						in the __License Manager__
 					</script>
 				</section>
 
@@ -1076,12 +1088,34 @@
 					<script type="text/template">
 						## Implement the ImageTarget Prefab
 
-						Import the __ImageTarget__ from __Qualcomm Augmented Reality/Prefabs/__
-						by dragging it into the heirarchy.
+						Import the __ImageTarget__ prefab from __Qualcomm Augmented Reality/Prefabs/__
+						by dragging it into the hierarchy.
 
 						In the __Image Target Behavior__ Script make sure __Data Set__
 						is set to your database and __Image Target__ is set to an
 						Image Target.
+
+						<img src="imgs/imageTargetblah.png"></img>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Create Child Object
+
+						In the Unity hierarchy, create a new __3D Object__ and
+						set it as the child of the ImageTarget via dragging and
+						dropping.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Testing Application
+
+						Run the project from Unity and hold up your image in
+						front of the camera. The child of the __ImageTarget__
+						should appear when the target is found.
 					</script>
 				</section>
 
