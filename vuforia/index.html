@@ -15,6 +15,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/custom.css">
+
 		<link rel="stylesheet" href="css/theme/white.css" id="theme">
 
 		<!-- Code syntax highlighting -->
@@ -40,6 +42,11 @@
 
 			<!-- Any section element inside of this container
 				is displayed as a slide -->
+
+			<div>
+				<img class="logo-lr" src="ualr-logo-black.svg"></img>
+			</div>
+
 			<div class="slides">
 				<section data-markdown>
 					<script type="text/template">
@@ -68,7 +75,8 @@
 						projects. The presentation is being hosted
 						online at
 						[byteflame.org/ieee_vr/vuforia](http://byteflame.org/ieee_vr/vuforia/#/)
-					</script>
+
+											</script>
 				</section>
 
 				<section data-markdown>
@@ -85,7 +93,8 @@
 							- Vuforia 4.0
 						- App 1: Simple Image Recognition
 						- App 2: OpenCV Integration
-					</script>
+
+											</script>
 				</section>
 
 				<section data-markdown>
@@ -105,7 +114,6 @@
 						in standalone applications.
 					</script>
 				</section>
-
 
 				<section data-markdown>
 					<script type="text/template">
@@ -173,21 +181,6 @@
 							<param name="movie" value="https://www.youtube.com/v/cx-X0UsWCG8?version=3&autoplay=0&autohide=1&rel=0"></param>
 							<param name="allowScriptAccess" value="always"></param>
 							<embed src="https://www.youtube.com/v/cx-X0UsWCG8?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
-						</object>
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Automotive Innovations
-						### Qualcomm Snapdragon Automotive Solutions
-
-						The official video can be found [here](https://www.youtube.com/watch?v=3Ubalf5d4dA)
-
-						<object width="640" height="390">
-							<param name="movie" value="https://www.youtube.com/v/3Ubalf5d4dA?version=3&autoplay=0&autohide=1&rel=0"></param>
-							<param name="allowScriptAccess" value="always"></param>
-							<embed src="https://www.youtube.com/v/3Ubalf5d4dA?version=3&autoplay=0&autohide=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" width="640" height="390"></embed>
 						</object>
 					</script>
 				</section>
@@ -325,6 +318,19 @@
 				<section data-markdown>
 					<script type="text/template">
 						# Vuforia
+						## Workflow
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						<img src="imgs/Vuforia_Components_SDKsection.PNG"></img>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						# Vuforia
 						## Feature Overview
 					</script>
 				</section>
@@ -402,7 +408,6 @@
 						</pre>
 
 						Learn more [here](https://developer.vuforia.com/library/articles/Solution/How-To-implement-Extended-Tracking)
-
 				</section>
 
 				<section data-markdown>
@@ -754,7 +759,7 @@
 						"Device Database" Tab and click on the "Create Database"
 						button.
 
-						Give the database a name and you are good to go.
+						Give the database a name, select a license, and you are good to go.
 					</script>
 				</section>
 
@@ -1101,7 +1106,7 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						## Create Child Object
+						## Create A Child Object
 
 						In the Unity hierarchy, create a new __3D Object__ and
 						set it as the child of the ImageTarget via dragging and
@@ -1111,7 +1116,7 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						## Testing Application
+						## Testing the Application
 
 						Run the project from Unity and hold up your image in
 						front of the camera. The child of the __ImageTarget__
