@@ -15,7 +15,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -39,7 +41,13 @@
 
 			<!-- Any section element inside of this container
 				is displayed as a slide -->
+
+			<div>
+				<img class="logo-lr" src="ualr-logo-black.svg"></img>
+			</div>
+
 			<div class="slides">
+
 				<section data-markdown>
 					<script type="text/template">
 						# Introduction
@@ -55,7 +63,7 @@
 				</section>
 				<section data-markdown>
 					<script type="text/template">
-						<img src="ualr-logo.svg" width=300px style="background:none; border:none; box-shadow:none;"></img>
+						<img src="ualr-logo-black.svg" width=300px style="background:none; border:none; box-shadow:none;"></img>
 
 						## Emerging Analytics Center
 
@@ -66,8 +74,11 @@
 				<section data-markdown>
 					<script type="text/template">
 						# OpenCV and Unity
+						## Using OpenCV in Unity
 
-						Using OpenCV in Unity
+						Dylan Johnson
+
+						Brent Blasingame
 					</script>
 				</section>
 
@@ -249,17 +260,6 @@
 				<section data-markdown>
 					<script type="text/template">
 						# OpenCV
-						## objdetect
-
-						The cascade classifier that will be used to track hand movemnts were pulled from a github repository.
-
-						https://github.com/Aravindlivewire/Opencv
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						# OpenCV
 						## The Modules
 
 						highgui. High-level GUI and Media I/O
@@ -273,7 +273,7 @@
 
 						The highgui module contains the VideoCapture object.  This is the object we will use for capturing video from the cameras.
 
-						This module can also allow users to easily create GUIs.
+						This module can also allow users to create Graphical User Interfaces.
 					</script>
 				</section>
 
@@ -340,10 +340,46 @@
 
 				<section data-markdown>
 					<script type="text/template">
+						#OpenCV
+						## A Bug
+
+						An attempt was made to implement hand detection using background subtraction.  OpenCV provides a rich library for doing this through
+						the BackgroundSubtraction class and its derived classes.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						#OpenCV
+						## A Bug
+
+						Whenever bindings have to be used, there is an increased chance for failure in the code. The C# bindings used in the project worked
+						perfectly by themselves.
+
+						When the C# bindings were used in the Unity Game Engine, an exception occured in the Mono runtime.  After many hours of research,
+						a solution could not be found.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
 						# OpenCV
 						## Techniques
 
-						Well trained classifiers are likley the most reliable and simplest option.
+						After the failed attempt at using background subtraction, Cascaid Classifiers were used.
+
+						No bugs were found.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						# OpenCV
+						## objdetect
+
+						The cascade classifier that will be used to track hand movements were pulled from a github repository.
+
+						https://github.com/Aravindlivewire/Opencv
 					</script>
 				</section>
 
@@ -353,8 +389,17 @@
 						## A Game Engine
 
 						Unity 3D is the game engine we will be using to demonstrate OpenCV.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						# Unity
+						## A Game Engine
 
 						Unity free can do everything needed for this tutorial.  Unity pro costs $1500.00 or a monthly payment of $70.00.
+
+						A list of differences between the free and paid versions of Unity can be found [here](http://unity3d.com/get-unity)
 					</script>
 				</section>
 
@@ -393,17 +438,6 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						# OpenCvSharp
-						## A problem
-
-						The only issue with OpenCvSharp so far is an inability to use the background subtraction objects while using OpenCvSharp with Unity
-
-						I can only describe this bug as magical.
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
 						# Unity
 						## Tutorial
 
@@ -416,7 +450,7 @@
 						# Unity
 						## Tutorial
 
-						Go to the bottom left corder and right click on the assets icon, go to create, then click on folder.
+						Go to the bottom left corner and right click on the assets icon, go to create, then click on folder.
 						Name this folder Plugins. If you want to import any plugins you must name this folder Plugins.
 
 						In the plugins folder, create another folder named opencv.

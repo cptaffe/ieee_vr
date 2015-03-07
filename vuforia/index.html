@@ -75,8 +75,7 @@
 						projects. The presentation is being hosted
 						online at
 						[byteflame.org/ieee_vr/vuforia](http://byteflame.org/ieee_vr/vuforia/#/)
-
-											</script>
+					</script>
 				</section>
 
 				<section data-markdown>
@@ -93,25 +92,6 @@
 							- Vuforia 4.0
 						- App 1: Simple Image Recognition
 						- App 2: OpenCV Integration
-
-											</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						# Introduction
-
-						Augmented Reality (AR) is the next generation
-						for technology as it incorporates the real world
-						with the virtual world. Vuforia is a high-level
-						API that allows developers to easily design
-						these applications for the general public
-						with development time. Vuforia works with Andriod,
-						iOS, and the Unity Game Engine.
-
-						This tutorial will cover the usage of Vuforia when paired
-						with OpenCV to create an immersive experience as well as
-						in standalone applications.
 					</script>
 				</section>
 
@@ -566,6 +546,73 @@
 
 				<section data-markdown>
 					<script type="text/template">
+						# Whats New in Vuforia 4.0
+						## A Quick Overview
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Vuforia 4.0
+
+						Qualcomm released the stable branch of Vuforia 4.0 on
+						February 25th, 2015. The update includes more functionality
+						for AR and platforms.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Vuforia 4.0
+						### Object Recognition
+
+						Vuforia 4.0 allows apps to recognize objects, such as toys
+						and products. These objects can then be
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Vuforia 4.0
+						### Vuforia Object Scanner
+
+						The Vuforia Object Scanner creates object targets via a
+						smartphone camera. It is curently only available for
+						Android smart phones.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Vuforia 4.0
+						### iOS 64-bit Support
+
+						Developers can now create 64-bit apps targeting the iOS
+						platform.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Vuforia 4.0
+						### License Manager
+
+						Vuforia 4.0 now requires users to register their applications
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Vuforia 4.0
+						### Release Notes
+
+						To review all changes made to the Vuforia SDK, check out
+						the [Vuforia 4.0 Release Notes](https://developer.vuforia.com/library/articles/Release_Notes/Vuforia-40-SDK-Release-Notes)
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
 						# Vuforia
 						## Getting Started
 					</script>
@@ -590,8 +637,8 @@
 						Take some time now to complete the registration form and
 						verify the new account via email.
 
-						Registering for a developer account is easy and can be found
-						[here](https://developer.vuforia.com/user/register)
+						Registering for a developer account is easy and can be found at
+						[developer.vuforia.com/user/register](https://developer.vuforia.com/user/register)
 					</script>
 				</section>
 
@@ -975,73 +1022,6 @@
 					</script>
 				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						# Whats New in Vuforia 4.0
-						## A Quick Overview
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Vuforia 4.0
-
-						Qualcomm released the stable branch of Vuforia 4.0 on
-						February 25th, 2015. The update includes more functionality
-						for AR and platforms.
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Vuforia 4.0
-						### Object Recognition
-
-						Vuforia 4.0 allows apps to recognize objects, such as toys
-						and products. These objects can then be
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Vuforia 4.0
-						### Vuforia Object Scanner
-
-						The Vuforia Object Scanner creates object targets via a
-						smartphone camera. It is curently only available for
-						Android smart phones.
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Vuforia 4.0
-						### iOS 64-bit Support
-
-						Developers can now create 64-bit apps targeting the iOS
-						platform.
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Vuforia 4.0
-						### License Manager
-
-						Vuforia 4.0 now requires users to register their applications
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Vuforia 4.0
-						### Release Notes
-
-						To review all changes made to the Vuforia SDK, check out
-						the [Vuforia 4.0 Release Notes](https://developer.vuforia.com/library/articles/Release_Notes/Vuforia-40-SDK-Release-Notes)
-					</script>
-				</section>
-
 				<!-- Simple Vuforia Project -->
 
 				<section data-markdown>
@@ -1084,6 +1064,16 @@
 						In the __QCARBehaviour__ script, set the App License Key
 						by copying and pasting it from the application licensed
 						in the __License Manager__
+
+						Make sure the Camera is set up to look for the appropriate
+						database.
+					</script>
+				</section>
+
+
+				<section data-markdown>
+					<script type="text/template">
+						## Implement the Camera
 					</script>
 				</section>
 
@@ -1158,20 +1148,170 @@
 					</script>
 				</section>
 
+				<section data-markdown>
+					<script type="text/template">
+						## Create the Global File System
+						### Vuforia
+
+						Import the Vuforia for Unity Extension
+					</script>
+				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						## Create a new project
-						### Import necessary files
+						## Create Project Asset Folder
 
-						Import the Vuforia Plugin For Unity from the Vuforia
-						Developer Network. It can be found
-						[here](https://developer.vuforia.com/resources/sdk/unity)
-						if it got 'lost'.
+						In the __root__ directory of your Unity Project
+						create a __project-assets__ folder.
 
-						Import the OpenCVSharp files from fjdklasfjdlsk;af.
-						[Here](https://www.youtube.com/watch?v=ukdiH4bs7fA&feature=player_embedded&autoplay=1)
-						is where it can be found for download.
+						This is where you will store project specific files.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Create the Project File System
+						### Vuforia
+
+						In the __project-assets__ folder, create a __scripts__
+						and a __textures__ folder.
+
+						These folders will contain the custom Vuforia files for
+						editing the child object during runtime.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Create the Materials
+
+						Get the __US One Hundred Dollar Bill__ and the __US One Million Dollar Bill__
+						from [byteflame.org/ieee_vr/dwn/vuforia/US_hundred_dollar_bill.png](http://byteflame.org/ieee_vr/dwn/vuforia/US_hundred_dollar_bill.png)
+						and [byteflame.org/ieee_vr/dwn/vuforia/US_million_dollar_bill.jpg](http://byteflame.org/ieee_vr/dwn/vuforia/US_million_dollar_bill.jpg)
+						and place them in the __textures__ directory.
+
+						Create a new Materials via right clicking in the __Project__ Viewer and set the
+						appropriate textures in the __Inspector__.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Vuforia Custom Files
+						### Texture Rotator Script
+
+						In order to demonstrate the project working successfully,
+						we will write a script called __TextureRotator__ in
+						the __scripts__ directory.
+					</script>
+				</section>
+
+				<section data-markdown>
+						## Vuforia Custom Files
+						### Texture Rotator Script
+
+						<pre>
+						<code class="java">
+							using UnityEngine;
+							using System.Collections;
+
+							public class TextureRotator : MonoBehaviour
+							{
+								public GameObject target;
+								public Material[] materialList;
+								public int currentMaterial = 0;
+
+								OpenCvHandDetection cvHandDetectionFist;
+								OpenCvHandDetection cvHandOpenPalm;
+								OpenCvVideoCaptureManager cvVideoCapture;
+
+								void Start()
+								{
+									cvVideoCapture = new OpenCvVideoCaptureManager();
+									cvHandDetectionFist = new OpenCvHandDetection();
+									cvHandOpenPalm = new OpenCvHandDetection(OpenCvHandDetection.palm);
+
+									target.renderer.material = materialList[currentMaterial];
+								}
+
+								void Update()
+								{
+									var curBuffer = cvVideoCapture.ReadAndGetCurrentBuffer();
+
+									cvHandOpenPalm.HandDetection(curBuffer);
+									cvHandDetectionFist.HandDetection(curBuffer);
+
+									if (cvHandOpenPalm.HandPresent)
+									{
+										nextMaterial();
+									}
+								}
+
+								void nextMaterial()
+								{
+									currentMaterial++;
+									target.renderer.material = materialList[currentMaterial % materialList.Length];
+								}
+							}
+						</code>
+					</pre>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Set Up Rotator Script
+
+						Add the __Texture Rotator__ script to the child object of the __ImageTarget__
+
+						Set the __Target__, __Material List__, and __Current Material__ variables
+						by dragging the __Target__ to update and the __Materials__ to update with.
+
+						<img src="imgs/Capture.PNG"></img>
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Create the Project File System
+						### OpenCV
+
+						In the __project-assets__ folder, copy __Harrcascade__
+						from the OpenCV tutorial.
+
+						This folder the various xml files needed for tracking the
+						hand.
+
+						Copy the scripts for OpenCV to the __scripts__ directory
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Create the Project File System
+						### OpenCV
+
+						Copy the necessary files to the __Plugins__ directory
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Testing out the code
+
+						Run the project! (Notice, this project takes two cameras!)
+
+						If you get a lot of __OpenCV__ errors, change the camera order.
+
+						Warning! This application has only been tested on a desktop
+						environment.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Didnt get all the steps?
+
+						Download the entire project here [byteflame.org/ieee_vr/dwn/OpenCV-Vuforia.zip](http://byteflame.org/ieee_vr/dwn/OpenCV-Vuforia.zip)
 					</script>
 				</section>
 
