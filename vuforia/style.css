@@ -44,6 +44,23 @@
 	margin-left: 5px;
 }
 
+.section h1 {
+	text-shadow: 3px 3px rgba(0,0,0,0.2);
+}
+
+.section h2 {
+	font-family: 'Libre Baskerville', serif;
+	font-size: 1em;
+	font-weight: 600;
+	font-style: italic;
+}
+
+quote {
+	font-family: 'Libre Baskerville', serif;
+	font-size: 0.7em;
+	font-style: italic;
+}
+
 #logo {
 	position: absolute;
 	bottom: 10px;
