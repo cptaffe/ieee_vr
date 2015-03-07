@@ -53,22 +53,22 @@
 			background: #387A36;
 		}
 
-		html.title h1>em {
-			font-family: 'Libre Baskerville', serif;
-			font-size: 0.5em;
-		}
-
-		html.title h1 {
+		/* Title slides */
+		.title h1 {
 			/* text-shadow: 5px 5px rgba(0,0,0,0.5); */
 			text-shadow: 3px 3px rgba(0,0,0,0.2);
 		}
 
-		#logo {
-			position: absolute;
-			bottom: 10px;
-			right: 10px;
-			z-index: 50;
-			opacity: 0.5;
+		.title h1>em {
+			font-family: 'Libre Baskerville', serif;
+			font-size: 0.5em;
+		}
+
+		/* Reveal override */
+		.reveal div[class=author] {
+			font-family: 'Ubuntu', sans-serif;
+			font-size: 0.5em;
+			font-style: italic;
 		}
 
 		.author {
@@ -82,6 +82,14 @@
 			margin-left: 5px;
 		}
 
+		#logo {
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			z-index: 50;
+			opacity: 0.5;
+		}
+
 		</style>
 
 
@@ -90,7 +98,7 @@
 	<body>
 
 		<!-- logo image -->
-		<img id="logo" src="ualr-logo.svg"></img>
+		<!--img id="logo" src="ualr-logo.svg"></img-->
 
 		<div class="reveal">
 
@@ -99,13 +107,18 @@
 
 			<div class="slides">
 
-				<section data-state="title" data-state="logo" data-background="#387A36">
+				<section class="title" data-background="#387A36">
 					<h1>AR <em class="vr-title-em">with</em> Vuforia</h1>
 					<div class="author">by <span class="name">Alex Jaeger</span> and <span class="name">Connor Taffe</span></div>
 				</section>
 
 				<section>
-					<h1> Another Slide </h1>
+					<h1> Follow Along </h1>
+					<p>
+						The presentation is avaliable online at <br>
+						<a href="//byteflame.org/ieee_vr/">byteflame.org/ieee_vr/vuforia</a> <br>
+						or at the short url <a href="//goo.gl/5HIASU">goo.gl/5HIASU</a>
+					</p>
 				</section>
 
 			</div>
@@ -113,18 +126,6 @@
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
-		<script>
-			// counter reveal.js overarching styling stuffs.
-			var elems = document.getElementsByClassName("author");
-			for (var i = 0; i < elems.length; i++) {
-				elems[i].style.fontFamily = "'Ubuntu', sans-serif";
-				elems[i].style.fontSize = "0.5em";
-				// if element is not of class 'name'
-				elems[i].style.fontStyle = "italic";
-			}
-
-		</script>
 
 		<script>
 
