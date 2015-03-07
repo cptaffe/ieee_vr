@@ -252,17 +252,6 @@
 				<section data-markdown>
 					<script type="text/template">
 						# OpenCV
-						## objdetect
-
-						The cascade classifier that will be used to track hand movemnts were pulled from a github repository.
-
-						https://github.com/Aravindlivewire/Opencv
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						# OpenCV
 						## The Modules
 
 						highgui. High-level GUI and Media I/O
@@ -276,7 +265,7 @@
 
 						The highgui module contains the VideoCapture object.  This is the object we will use for capturing video from the cameras.
 
-						This module can also allow users to easily create GUIs.
+						This module can also allow users to create Graphical User Interfaces.
 					</script>
 				</section>
 
@@ -343,10 +332,46 @@
 
 				<section data-markdown>
 					<script type="text/template">
+						#OpenCV
+						## A Bug
+
+						An attempt was made to implement hand detection using background subtraction.  OpenCV provides a rich library for doing this through
+						the BackgroundSubtraction class and its derived classes.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						#OpenCV
+						## A Bug
+
+						Whenever bindings have to be used, there is an increased chance for failure in the code. The C# bindings used in the project worked
+						perfectly by themselves.
+
+						When the C# bindings were used in the Unity Game Engine, an exception occured in the Mono runtime.  After many hours of research,
+						a solution could not be found.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
 						# OpenCV
 						## Techniques
 
-						Well trained classifiers are likley the most reliable and simplest option.
+						After the failed attempt at using background subtraction, Cascaid Classifiers were used.
+
+						No bugs were found.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						# OpenCV
+						## objdetect
+
+						The cascade classifier that will be used to track hand movements were pulled from a github repository.
+
+						https://github.com/Aravindlivewire/Opencv
 					</script>
 				</section>
 
