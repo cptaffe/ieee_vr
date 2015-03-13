@@ -1,0 +1,17 @@
+
+Last Updated: 3/13/15
+
+
+VUFORIA
+----------
+App Examples
++ Add slides explaining the use of Vuforia in each application
+
+
+After App Examples and Before Workflow
++ Add slides 
+	+ explaining the general use of Vuforia in applications
+	+ explaining the fall backs of Vuforia.	
+	+ explaining how people can use Vuforia (Unity/ Android/ iOS)
+	
+		
