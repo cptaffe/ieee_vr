@@ -174,6 +174,8 @@
 						## An Overview
 
 						OpenCV is an open source computer vision library that is maintained by Intel.
+
+						OpenCV has been developed since 2000.  It is an extremely mature library.
 					</script>
 				</section>
 
@@ -228,11 +230,9 @@
 					<script type="text/template">
 						# OpenCV
 
-						OpenCV is cross-platform
+						OpenCV is implemented in C++ and its intended language of development is C++.
 
-						OpenCV is nativley written in C++.
-
-						Bindings have been written for almost any language that would be used.
+						Bindings have been implemented for many languages.
 
 						- Java
 						- C#
@@ -246,34 +246,54 @@
 						# OpenCV
 						## The Modules
 
-						OpenCV has been in development since 2000.  It is an extremely mature library and contains over 2500 classic and
-						state-of-the-art algorithms for solving problems in Computer Vision.
+						OpenCV has a modular design.
 
-						OpenCV's main functinality is contained in a set of modules.  Each module contains a different functinality of OpenCV.
+						Each module contains a different functinality of OpenCV.
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						# OpenCV
-						## The Modules
+						## core
 
 						core. The Core Functionality
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						# OpenCV
-						## Core
 
 						The Core module contains the basic data structures and functions that are
 						used throughout OpenCV.
+					</script>
+				</section>
 
-						The Mat object is the generic data storage object for images.
+				<section data-markdown>
+					<script type="text/template">
+						# OpenCV
+						## core
 
-						The Core module also has functions for linear algebra, drawing, xml parsing, and
-						other matrix operations.
+						OpenCV needs a data type to store images in memory.
+
+						The Mat object fills this role.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						# OpenCV
+						## core
+
+						The Mat object is a generic n-dimensional array data type.
+
+						It can store many different types of data such as vectors, voxels, vector fields, and point clouds.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						# OpenCV
+						## core
+
+						Computer vision is a mathematically heavy subject.
+
+						The core module has basic mathematical operations for linear algebra and other matrix operations.
 					</script>
 				</section>
 
@@ -282,7 +302,8 @@
 						# OpenCV
 						## Core
 
-						The Mat object is the most important data type for this tutorial.  The Mat object will be used to process images and alter them.
+						The Mat object is the most important data type for this tutorial.
+						The Mat object will be used to process images and alter them.
 					</script>
 				</section>
 
