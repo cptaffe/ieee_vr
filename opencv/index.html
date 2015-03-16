@@ -322,7 +322,7 @@
 
 						This module contains the object detection functinality.
 
-						The objdetect module has provides two different algorithms for detecting objects.
+						The objdetect module has provides two algorithms for detecting objects.
 
 						- Cascade Classification
 						- Latent SVM
@@ -334,23 +334,15 @@
 						# OpenCV
 						## objdetect
 
-						The Cascade Classification method uses trained cascade files to detect objects.
+						The Cascade Classification method uses trained xml files to detect objects.
 
-						Cascade files are trained, with a free application provided by OpenCV, to detect the specific
-						object.
+						The xml files are called cascade files.
 
 						Cascade files can be trained to detect almost any object.
 					</script>
 				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						# OpenCV
-						## objdetect
 
-						The CascadeClassifier object is what will be used to detect objects.  It requires a cascade classifier to function.
-					</script>
-				</section>
 
 				<section data-markdown>
 					<script type="text/template">
@@ -368,11 +360,31 @@
 						# OpenCV
 						## objdetect
 
-						A cascade classifier is an xml file that is used by the CascadeClassifier object for detecting specific objects in images.
+						Tutorials to train cascade classifiers can be found at the url below.
 
-						Cascade classifiers must be trained in order for them work.  OpenCV provides software for the training of cascade classifiers.
+						http://docs.opencv.org/doc/user_guide/ug_traincascade.html
+					</script>
+				</section>
 
-						Cascade classifiers can be trained for many different objects.
+				<section data-markdown>
+					<script type="text/template">
+						# OpenCV
+						## objdetect
+
+						Latent SVM is another algorithm for object detection.
+
+						Like Cascade Classification, Latent SVM uses trained xml files to define the detectors.
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						# OpenCV
+						## objdetect
+
+						Latent SVM is considered to be more accurate than Cascade Classification but it is not as fast.
+
+						Both algorithms can be used for detecting almost any object.
 					</script>
 				</section>
 
