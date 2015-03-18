@@ -342,8 +342,6 @@
 					</script>
 				</section>
 
-
-
 				<section data-markdown>
 					<script type="text/template">
 						# OpenCV
@@ -420,81 +418,25 @@
 				<section data-markdown>
 					<script type="text/template">
 						# OpenCV
-						## imgproc
+						## The Modules
 
-						Image Processing
+						- imgproc. Image Processing
+						- video. Video Analysis
+						- calib3d. Camera Calibration and 3D Reconstruction
+						- features2d. 2D Features Framework
+						- ml. Machine Learning
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
 						# OpenCV
-						## video
+						## The Modules
 
-						Video Analysis
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						# OpenCV
-						## calib3d
-
-						Camera Calibration and 3D Reconstruction
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						# OpenCV
-						## features2d
-
-						2D Features Framework
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						# OpenCV
-						## ml
-
-						Machine Learning
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						# OpenCV
-						## flann
-
-						Clustering and Search in Multi-Dimensional Spaces
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						# OpenCV
-						## gpu
-
-						GPU-accelerated Computer Vision
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						# OpenCV
-						## photo
-
-						Computational Photography
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						# OpenCV
-						## stitching
-
-						Images stitching
+						- flann. Clustering and Search in Multi-Dimensional Spaces
+						- gpu. GPU-accelerated Computer Vision
+						- photo. Computational Photography
+						- stitching. Images stitching
 					</script>
 				</section>
 
@@ -503,7 +445,7 @@
 						# OpenCV
 						## Hand Detection
 
-						With the tools that OpenCV provides, hand detection can be implemented realtivly easily.
+						With the tools that OpenCV provides, hand detection can be implemented relativly easily.
 					</script>
 				</section>
 
@@ -514,7 +456,7 @@
 
 						In addition to cascade classifiers, background subtraction or edge detection could be used.
 
-						Techniques for detecting bodily parts are not limited to the aforementioned techniques.
+						Techniques for detecting objects are not limited to the aforementioned techniques.
 					</script>
 				</section>
 
@@ -538,17 +480,6 @@
 						background noise can be reduced so that when the edge detection function is called, it will detect the outline of the hand.
 
 						<img src="imgs/edge_detection.jpg"/> <font size="1">http://docs.opencv.org/modules/imgproc/doc/feature_detection.html</font>
-					</script>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						# OpenCV
-						## objdetect
-
-						The cascade classifier that will be used to track hand movements were pulled from a github repository.
-
-						https://github.com/Aravindlivewire/Opencv
 					</script>
 				</section>
 
@@ -578,7 +509,10 @@
 						# Unity
 						## OpenCV Bindings
 
-						//mention emgucv, opencvsharp, unity plugin
+						EmguCV is a .NET binding to OpenCV.  It is feature complete but only a commercial version
+						is avaliable for Unity.
+
+						http://www.emgu.com/wiki/index.php/Main_Page
 					</script>
 				</section>
 
@@ -587,19 +521,35 @@
 						# Unity
 						## OpenCV Bindings
 
-						Because bindings introduce another abstraction over the origional api, they can cause unexpected and unexplainable problems.
+						A plugin is avaliable on the asset store.  This is likley the most stable option.
+
+						Using the plugin requires the purchase of a $95.00 lisence.
+
+						http://u3d.as/content/enox-software/open-cv-for-unity/915
 					</script>
 				</section>
 
 				<section data-markdown>
 					<script type="text/template">
-						# OpenCvSharp
+						# Unity
+						## OpenCV Bindings
 
-						The OpenCvSharp project is a well maintained project.  It is open source and hosted on github.
+						OpenCvSharp is an open source set of .NET bindings.
 
-						OpenCvSharp strives have an architecture that is as close to the C++ OpenCV API as possible.
+						OpenCvSharp is well maintained and can be used with Unity with relative ease.
 
-						Repository location: https://github.com/shimat/opencvsharp
+						This is the project that will be used to use OpenCV in Unity.
+
+						https://github.com/shimat/opencvsharp
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						# Unity
+						## OpenCV Bindings
+
+						Because bindings introduce another abstraction over the original api, they can cause unexpected and unexplainable bugs.
 					</script>
 				</section>
 
@@ -665,6 +615,17 @@
 						# Unity
 						## Tutorial
 
+						The cascade classifiers that will be used to track hand movements were pulled from a github repository.
+
+						https://github.com/Aravindlivewire/Opencv
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						# Unity
+						## Tutorial
+
 						Create a folder named HaarCascade in the assets folder.
 
 						Download the Haarcascade files http://byteflame.org/ieee_vr/dwn/Haarcascade.zip
@@ -698,7 +659,7 @@
 						Now, if you have a webcam, you should be able to run the project and
 						it will detect your closed hand or fist.
 
-						It will draw a square around your hand or fist.
+						It will draw a square on your hand or fist.
 					</script>
 				</section>
 			</div>
