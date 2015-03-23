@@ -338,7 +338,7 @@
 				<section data-markdown>
 					<script type="text/template">
 						## Extended Tracking
-						### Implementation
+						### Information
 
 						If the environment or target is not static, then
 						__Persistent Extended Tracking Mode__ may be better
@@ -354,6 +354,25 @@
 						- Cloud Recognition
 					</script>
 				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Extended Tracking
+						### Normal vs Persistence
+
+						Normal Extended Tracking assumes the environment is mostly
+						static, but if it is not lag can occur while Vuforia tries
+						to adapt to the changes by rebuilding the map.
+
+						Persistent Extended Tracking prevents Vuforia from reseting
+						or rebuilding the map. The developer then has the control
+						to reset / rebuild the map using the __resetExtendedTracking__
+						API.
+
+						Learn more [here](https://developer.vuforia.com/library//articles/Training/Extended-Tracking)
+					</script>
+				</section>
+
 
 				<section data-markdown>
 					<script type="text/template">
@@ -464,7 +483,8 @@
 					<script type="text/template">
 						## Frame Markers
 
-						Allows an alternative to feature-based detection and tracking.
+						Allows an alternative to feature-based detection and tracking
+						by providing a feature-less tracking solution.
 
 						<img src="imgs/frame_marker_example_create_targets.png"></img>
 
@@ -498,10 +518,13 @@
 						## Frame Markers
 						### Implementation
 
-						Images used within the marker are not used for tracking
+						Print the image you want to track with the unique frame
+						marker border and specify it in your application.
 
-						Look at the [Core Samples](https://developer.vuforia.com/downloads/samples) to learn how to implement
-						Frame Markers.
+						Images used within the marker are not used for tracking.
+
+						Look at the [Core Samples](https://developer.vuforia.com/downloads/samples)
+						to learn how to implement Frame Markers.
 					</script>
 				</section>
 
@@ -646,6 +669,22 @@
 
 						Registering for a developer account is easy and can be found at
 						[developer.vuforia.com/user/register](https://developer.vuforia.com/user/register)
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Download Vuforia
+						### Convenience
+
+						I have put up the various files for convenience. If there
+						is internet I recommend downloading them yourself and
+						following the tutorial.
+
+						- [Vuforia SDK](http://byteflame.org/ieee_vr/dwn/vuforia/req/vuforia-unity-mobile-android-ios-4-0-103.unitypackage)
+						- [IEEEVR 15 Database](http://byteflame.org/ieee_vr/dwn/vuforia/req/IEEEVR15.unitypackage)
+						- [App Key](http://byteflame.org/ieee_vr/dwn/vuforia/req/App%20Key.txt)
+
 					</script>
 				</section>
 
